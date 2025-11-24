@@ -2,127 +2,270 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Choose.Creditcard — Compare the best credit cards</title>
-  <meta name="description" content="Compare fees, APR, foreign fees, lounge access and rewards. The umbrella hub of The CreditCard Collection by ronarn.">
-  <link rel="canonical" href="https://choose.creditcard" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- SEO -->
-  <meta name="keywords" content="credit card comparison, best credit cards, APR, foreign fees, lounge, cashback, ronarn, choose.creditcard">
+  <title>Best Credit Cards 2025 – Compare Rewards, APR & Perks | Choose.CreditCard</title>
+  <meta name="description" content="Independent comparison of the best credit cards in 2025. Filter by rewards, annual fee, intro APR, travel perks and welcome bonuses. Fast, mobile-first tables and direct sign-up links." />
+  <link rel="canonical" href="https://choose.creditcard/" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Choose.Creditcard — Compare the best credit cards">
-  <meta property="og:description" content="Filter by annual fee, APR, foreign fees, lounge access, insurance and rewards.">
-  <meta property="og:url" content="https://choose.creditcard">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://choose.creditcard/preview.png">
+  <meta property="og:title" content="Best Credit Cards 2025 – Choose.CreditCard" />
+  <meta property="og:description" content="Compare rewards, fees and perks. Clean, fast, no fluff." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://choose.creditcard/" />
+  <meta property="og:image" content="https://choose.creditcard/og.png" />
 
   <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Choose.Creditcard — Compare the best credit cards">
-  <meta name="twitter:description" content="The umbrella hub of The CreditCard Collection.">
-  <meta name="twitter:image" content="https://choose.creditcard/preview.png">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Best Credit Cards 2025 – Choose.CreditCard" />
+  <meta name="twitter:description" content="Independent comparison of rewards, fees and perks." />
+  <meta name="twitter:image" content="https://choose.creditcard/og.png" />
 
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
 
-  <!-- Google Analytics (GA4) -->
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"Choose.CreditCard",
+    "url":"https://choose.creditcard/",
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://choose.creditcard/?q={search_term_string}",
+      "query-input":"required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Google Analytics (swap ID if needed) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-64FE63JQ3H"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date()); gtag('config', 'G-64FE63JQ3H');
+    gtag('js', new Date());
+    gtag('config','G-64FE63JQ3H');
   </script>
+
+  <style>
+    :root{--bg:#0b1220;--panel:#0f172a;--line:#1e293b;--text:#e5e7eb;--muted:#94a3b8;--accent:#38bdf8;--ok:#22c55e;}
+    *{box-sizing:border-box}
+    body{margin:0;background:radial-gradient(1200px 600px at 20% -10%,#0f1a34 0,#0b1220 35%,#060b16 100%);color:var(--text);font:16px/1.55 Inter,system-ui,Segoe UI,Arial}
+    a{color:var(--accent);text-decoration:none}
+    .wrap{max-width:1080px;margin:auto;padding:24px}
+    header{position:sticky;top:0;backdrop-filter:saturate(140%) blur(6px);background:#0b1220cc;border-bottom:1px solid var(--line);z-index:10}
+    .brand{display:flex;align-items:center;gap:.6rem;font-weight:700}
+    .pill{height:32px;width:32px;border-radius:999px;background:linear-gradient(135deg,#60a5fa,#22d3ee);display:grid;place-items:center;color:#0b1220;font-size:.8rem}
+    nav a{color:var(--muted);margin-right:16px}
+    nav a:hover{color:#fff}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:18px}
+    h1{font-size:clamp(28px,5vw,44px);line-height:1.1;margin:6px 0 12px}
+    .kicker{letter-spacing:.25em;color:#7dd3fc;text-transform:uppercase;font-size:.72rem}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border-radius:12px;font-weight:600;background:var(--accent);color:#041019}
+    .btn:hover{filter:brightness(1.05)}
+    .ghost{background:transparent;color:var(--text);border:1px solid var(--line)}
+    .grid{display:grid;gap:14px}
+    .grid-3{grid-template-columns:repeat(3,1fr)}
+    @media (max-width:880px){.grid-3{grid-template-columns:1fr}}
+    /* Comparison table */
+    .table{width:100%;border-collapse:separate;border-spacing:0 10px}
+    .table thead th{font-size:.8rem;color:var(--muted);text-align:left;padding:8px 10px}
+    .row{background:var(--panel);border:1px solid var(--line);border-radius:14px}
+    .row td{padding:14px 10px;vertical-align:middle}
+    .row td:first-child{padding-left:14px}
+    .badge{font-size:.72rem;padding:4px 8px;border:1px solid var(--line);border-radius:999px;color:#cbd5e1}
+    .stars{color:#fbbf24;font-weight:700}
+    .cta{min-width:136px;text-align:center}
+    .legal{font-size:.74rem;color:var(--muted)}
+    footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-size:.85rem}
+    .mini{font-size:.78rem;color:var(--muted)}
+    .notice{background:#05202b;border:1px dashed #0ea5b8;color:#a5f3fc;border-radius:12px;padding:10px 12px}
+  </style>
 </head>
-<body class="bg-slate-950 text-slate-100">
-  <!-- Top bar -->
-  <header class="border-b border-slate-800/60 bg-slate-950/70 backdrop-blur sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-      <div class="flex items-center gap-2">
-        <div class="h-8 w-8 rounded-full bg-sky-500/80 flex items-center justify-center text-xs font-bold">CC</div>
-        <span class="font-semibold tracking-tight">Choose.Creditcard</span>
+<body>
+  <header>
+    <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:14px">
+      <div class="brand">
+        <div class="pill">CC</div><span>Choose.CreditCard</span>
       </div>
-      <nav class="hidden md:flex gap-6 text-sm text-slate-300">
-        <a href="#compare" class="hover:text-white">Compare</a>
-        <a href="https://travels.creditcard" class="hover:text-white">Travel</a>
-        <a href="https://cashbacks.creditcard" class="hover:text-white">Cashback</a>
-        <a href="https://tech.creditcard" class="hover:text-white">Tech</a>
-        <a href="https://network.creditcard" class="hover:text-white">Network</a>
+      <nav class="mini">
+        <a href="#compare">Compare</a>
+        <a href="#how">How we compare</a>
+        <a href="#collection">CreditCard Collection</a>
+        <a href="mailto:support@ronarn.com">Contact</a>
       </nav>
-      <a href="mailto:support@ronarn.com" class="text-xs md:text-sm bg-sky-500 hover:bg-sky-400 text-slate-950 font-semibold rounded-lg px-3 py-1.5 transition">Contact</a>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="max-w-6xl mx-auto px-4 pt-10 pb-12">
-    <div class="grid md:grid-cols-2 gap-10 items-center">
+  <main class="wrap">
+    <!-- HERO -->
+    <section class="hero">
       <div>
-        <p class="text-xs uppercase tracking-[0.3em] text-sky-300 mb-4">The CreditCard Collection · hub</p>
-        <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-4">
-          Compare and choose<br class="hidden md:block" />
-          <span class="text-sky-300">the right credit card.</span>
-        </h1>
-        <p class="text-slate-300 leading-relaxed mb-6">
-          Filter by annual fee, effective APR, foreign fees, lounge access, insurance and rewards. Start with our editor’s picks or open the full table.
+        <p class="kicker">Independent picks · updated 2025</p>
+        <h1>Best Credit Cards 2025 — rewards, fees & perks at a glance</h1>
+        <p class="mini" style="max-width:62ch">
+          Mobile-first comparison. We track rewards value, annual fees, intro offers, travel perks and whether points are flexible.
+          Sign-up buttons below are <strong>affiliate links</strong> (<em>no extra cost for you</em>).
         </p>
-        <div class="flex flex-wrap gap-3">
-          <a href="#compare" class="bg-sky-500 hover:bg-sky-400 text-slate-950 font-semibold rounded-lg px-4 py-2 text-sm transition">Open comparison</a>
-          <a href="https://network.creditcard" class="text-sm text-slate-200 hover:text-white underline underline-offset-4">About the network</a>
+        <div style="display:flex;gap:10px;margin-top:12px">
+          <a class="btn" href="#compare">See top cards</a>
+          <a class="btn ghost" href="#collection">See the .creditcard domain collection</a>
         </div>
+        <div class="notice" style="margin-top:14px">Tip: on mobile, this table has a fixed “Apply” column, so no horizontal scrolling is needed.</div>
       </div>
-      <div class="bg-slate-900/30 border border-slate-800 rounded-2xl p-6 md:p-8">
-        <p class="text-slate-300 text-sm mb-3">Quick picks</p>
-        <ul class="space-y-2 text-sm">
-          <li class="flex items-center justify-between bg-slate-900/50 px-3 py-2 rounded-lg"><span>Travel cards</span><a class="text-sky-300 text-xs" href="https://travels.creditcard">See travel</a></li>
-          <li class="flex items-center justify-between bg-slate-900/50 px-3 py-2 rounded-lg"><span>Cashback & rewards</span><a class="text-sky-300 text-xs" href="https://cashbacks.creditcard">See cashback</a></li>
-          <li class="flex items-center justify-between bg-slate-900/50 px-3 py-2 rounded-lg"><span>Low APR</span><a class="text-sky-300 text-xs" href="#compare">Compare APR</a></li>
-          <li class="flex items-center justify-between bg-slate-900/50 px-3 py-2 rounded-lg"><span>Virtual & security</span><a class="text-sky-300 text-xs" href="https://tech.creditcard">See tech</a></li>
+
+      <div class="card">
+        <div class="mini" style="margin-bottom:8px;color:#cbd5e1">Quick reasons people choose these cards</div>
+        <ul class="mini" style="margin:0;padding-left:18px;display:grid;gap:6px">
+          <li>High welcome bonuses with reasonable minimum spend</li>
+          <li>Transferable points or valuable cash-back</li>
+          <li>Travel perks (lounge access, credits, insurance)</li>
+          <li>Low or 0% intro APR periods on select cards</li>
         </ul>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Compare (MVP table placeholder) -->
-  <section id="compare" class="max-w-6xl mx-auto px-4 pb-12">
-    <h2 class="text-xl font-semibold mb-4">Comparison</h2>
-    <div class="flex flex-wrap gap-2 mb-3 text-sm text-slate-300">
-      <select class="bg-slate-900 border border-slate-800 rounded-lg px-3 py-2">
-        <option>All categories</option><option>Travel</option><option>Cashback</option><option>Low APR</option><option>Business</option>
-      </select>
-      <select class="bg-slate-900 border border-slate-800 rounded-lg px-3 py-2">
-        <option>Sort: Editor’s pick</option><option>Annual fee (low)</option><option>APR (low)</option><option>Foreign fee (low)</option><option>Rewards (high)</option>
-      </select>
-    </div>
-    <div class="overflow-x-auto border border-slate-800 rounded-xl">
-      <table class="min-w-full text-sm">
-        <thead class="bg-slate-900 text-slate-300">
-          <tr><th class="text-left p-3">Card</th><th class="text-left p-3">Annual fee</th><th class="text-left p-3">Eff. APR</th><th class="text-left p-3">Foreign fee</th><th class="text-left p-3">Perks</th><th class="text-right p-3">Action</th></tr>
-        </thead>
-        <tbody class="divide-y divide-slate-800">
-          <tr>
-            <td class="p-3"><div class="font-medium">DNB Saga Mastercard</div><div class="text-slate-400 text-xs">DNB</div></td>
-            <td class="p-3">0 kr</td><td class="p-3">23.4%</td><td class="p-3">1.75%</td><td class="p-3">Lounge, travel insurance</td>
-            <td class="p-3 text-right"><a class="px-3 py-1.5 rounded-lg bg-sky-500 text-slate-950 font-semibold" href="#">Go to bank</a></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="text-xs text-slate-500 mt-3">* Contains affiliate links when marked as such. Confirm terms at issuer.</p>
-  </section>
+    <!-- COMPARISON -->
+    <section id="compare" style="margin-top:26px">
+      <h2 style="margin:0 0 10px">Top cards (editor’s picks)</h2>
+      <div style="overflow-x:auto">
+        <table class="table" role="table" aria-label="Credit card comparison">
+          <thead>
+            <tr>
+              <th style="min-width:220px">Card</th>
+              <th>Rewards</th>
+              <th>Welcome</th>
+              <th>Annual fee</th>
+              <th>APR (intro)</th>
+              <th>Perks</th>
+              <th class="cta">Apply</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- ROW TEMPLATE: duplicate and edit -->
+            <tr class="row">
+              <td>
+                <div style="display:flex;align-items:center;gap:10px">
+                  <img src="/img/card-1.png" alt="" width="44" height="28" style="border-radius:6px;border:1px solid #1f2937">
+                  <div>
+                    <div style="font-weight:600">Prime Travel X</div>
+                    <div class="mini">Flexible points • <span class="stars">★★★★★</span></div>
+                  </div>
+                </div>
+              </td>
+              <td>3x travel & dining, 1x other</td>
+              <td>80,000 pts after $4k/3m</td>
+              <td>$95</td>
+              <td>20.99–27.99% (0% 12m)</td>
+              <td><span class="badge">Lounge</span> <span class="badge">Transfers</span> <span class="badge">Insurance</span></td>
+              <td class="cta">
+                <a class="btn" rel="nofollow sponsored" href="/go/prime-travel-x">Apply</a>
+              </td>
+            </tr>
 
-  <!-- Guides -->
-  <section class="max-w-6xl mx-auto px-4 pb-16">
-    <h2 class="text-xl font-semibold mb-4">Guides</h2>
-    <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
-      <a class="bg-slate-900/40 border border-slate-800 rounded-xl p-4" href="/guides/apr"><h3 class="font-semibold">APR explained</h3><p class="text-xs text-slate-400 mt-2">What effective interest means.</p></a>
-      <a class="bg-slate-900/40 border border-slate-800 rounded-xl p-4" href="/guides/foreign-fees"><h3 class="font-semibold">Foreign fees</h3><p class="text-xs text-slate-400 mt-2">Save on travel purchases.</p></a>
-      <a class="bg-slate-900/40 border border-slate-800 rounded-xl p-4" href="/guides/lounges"><h3 class="font-semibold">Lounges</h3><p class="text-xs text-slate-400 mt-2">How access works.</p></a>
-      <a class="bg-slate-900/40 border border-slate-800 rounded-xl p-4" href="/guides/security"><h3 class="font-semibold">Security</h3><p class="text-xs text-slate-400 mt-2">Insurance & chargebacks.</p></a>
-    </div>
-  </section>
+            <tr class="row">
+              <td>
+                <div style="display:flex;align-items:center;gap:10px">
+                  <img src="/img/card-2.png" alt="" width="44" height="28" style="border-radius:6px;border:1px solid #1f2937">
+                  <div>
+                    <div style="font-weight:600">Everyday Cash Plus</div>
+                    <div class="mini">Cash-back • <span class="stars">★★★★☆</span></div>
+                  </div>
+                </div>
+              </td>
+              <td>5% rotating, 2% groceries, 1% other</td>
+              <td>$200 after $1k/3m</td>
+              <td>$0</td>
+              <td>19.49–27.49% (0% 15m)</td>
+              <td><span class="badge">No AF</span> <span class="badge">Cell-protection</span></td>
+              <td class="cta">
+                <a class="btn" rel="nofollow sponsored" href="/go/everyday-cash-plus">Apply</a>
+              </td>
+            </tr>
 
-  <!-- Footer -->
-  <footer class="border-t border-slate-800 py-6 text-center text-xs text-slate-500">
-    Part of <span class="text-slate-200">The CreditCard Collection</span> · built by <span class="text-slate-200">ronarn</span> · Contact: <a href="mailto:support@ronarn.com" class="underline underline-offset-4">support@ronarn.com</a>
+            <tr class="row">
+              <td>
+                <div style="display:flex;align-items:center;gap:10px">
+                  <img src="/img/card-3.png" alt="" width="44" height="28" style="border-radius:6px;border:1px solid #1f2937">
+                  <div>
+                    <div style="font-weight:600">Traveler Pro</div>
+                    <div class="mini">Premium travel • <span class="stars">★★★★★</span></div>
+                  </div>
+                </div>
+              </td>
+              <td>10x hotels, 5x flights, 1x other</td>
+              <td>100,000 pts after $6k/3m</td>
+              <td>$395</td>
+              <td>21.99–28.99%</td>
+              <td><span class="badge">Lounge+</span> <span class="badge">Credits</span> <span class="badge">Transfers</span></td>
+              <td class="cta">
+                <a class="btn" rel="nofollow sponsored" href="/go/traveler-pro">Apply</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="legal" style="margin-top:10px">
+        Rates & fees are examples and may change. Always verify terms on the issuer’s application page.
+        We may earn a commission if you sign up via our links.
+      </p>
+    </section>
+
+    <!-- HOW WE COMPARE -->
+    <section id="how" style="margin-top:32px" class="grid grid-3">
+      <div class="card">
+        <h3 style="margin:0 0 8px">Methodology</h3>
+        <p class="mini">We score cards on rewards value, welcome offers, fees, APR, travel protections, acceptance and flexibility of points.</p>
+      </div>
+      <div class="card">
+        <h3 style="margin:0 0 8px">Who is this for?</h3>
+        <p class="mini">Beginners who want simple cash-back and travelers chasing flexible points and lounge access.</p>
+      </div>
+      <div class="card">
+        <h3 style="margin:0 0 8px">Transparency</h3>
+        <p class="mini">Choose.CreditCard is independent and part of ronarn AS. See our policies at the bottom of the page.</p>
+      </div>
+    </section>
+
+    <!-- COLLECTION / BRAND (link til portalen) -->
+    <section id="collection" style="margin-top:28px">
+      <div class="card">
+        <h2 style="margin:0 0 10px">The CreditCard Collection by ronarn</h2>
+        <p class="mini">We also operate a curated namespace of .creditcard domains for fintech and issuers (e.g. <strong>fin.creditcard</strong>, <strong>tap.creditcard</strong>, <strong>verify.creditcard</strong>, <strong>payai.creditcard</strong>). Looking to launch a product or acquire a brand?</p>
+        <p><a class="btn ghost" href="https://fin.creditcard/">Explore the collection</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap" style="display:grid;gap:10px">
+      <div>© <span id="year"></span> Choose.CreditCard — Independent comparisons. Operated by ronarn AS (Norway).</div>
+      <div class="mini">
+        <a href="https://privacypolicy.bio" target="_blank" rel="noopener">Privacy</a> ·
+        <a href="https://disclosure.bio" target="_blank" rel="noopener">Affiliate Disclosure</a> ·
+        <a href="https://verification.bio" target="_blank" rel="noopener">Verification</a> ·
+        <a href="mailto:support@ronarn.com">Contact</a>
+      </div>
+    </div>
   </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Optional: lightweight UTM helper for /go/* redirects
+    document.querySelectorAll('a[href^="/go/"]').forEach(a=>{
+      const url = new URL(a.href, location.origin);
+      const src = new URLSearchParams(location.search).get('src') || 'choose';
+      url.searchParams.set('src', src);
+      a.href = url.pathname + '?' + url.searchParams.toString();
+    });
+  </script>
 </body>
 </html>
