@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+# Ikke la søkemotorer kaste bort tid i affiliate-redirect-mappen
+Disallow: /go/
+Sitemap: https://choose.creditcard/sitemap.xml
