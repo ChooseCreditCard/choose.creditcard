@@ -2,173 +2,462 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Business Credit Cards – Choose.Creditcard</title>
+  <title>Business &amp; Freelance Cards – Choose.Creditcard</title>
   <meta name="description"
-        content="A clear overview of business and corporate credit cards — expense control, employee cards, cashback programs, travel perks and credit limits." />
+        content="Business & freelance hub on Choose.Creditcard. Prototype comparison of cards for companies, freelancers and side hustles – with focus on expense tools, limits and protections." />
+  <link rel="canonical" href="https://choose.creditcard/business/" />
+
+  <!-- SEO basics -->
   <meta name="robots" content="index,follow" />
-  <link rel="canonical" href="https://choose.creditcard/business" />
+  <meta name="keywords"
+        content="business credit card, company card, freelance card, corporate card, expense management, accounting integration, choose.creditcard" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Business Credit Cards – Choose.Creditcard" />
+  <meta property="og:title" content="Business &amp; Freelance Cards – Choose.Creditcard" />
   <meta property="og:description"
-        content="Understand business credit cards: expense control, employee cards, travel perks and how to compare them." />
+        content="Sub-hub on Choose.Creditcard focused on business and freelance cards. Prototype comparison of expense tools, controls and fees." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://choose.creditcard/business" />
+  <meta property="og:url" content="https://choose.creditcard/business/" />
   <meta property="og:image" content="https://choose.creditcard/preview.png" />
 
-  <!-- Tailwind -->
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Business &amp; Freelance Cards – Choose.Creditcard" />
+  <meta name="twitter:description"
+        content="Business & freelance sub-hub of The CreditCard Collection by ronarn. Prototype and educational only." />
+  <meta name="twitter:image" content="https://choose.creditcard/preview.png" />
+
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="/styles.css" />
+
+  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- GA4 -->
+  <!-- Google Analytics (GA4) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-64FE63JQ3H"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
-    gtag('config','G-64FE63JQ3H');
+    gtag('config', 'G-64FE63JQ3H');
   </script>
 </head>
-<body class="bg-slate-50 text-slate-900">
 
+<body class="bg-slate-50 text-slate-900">
   <!-- Header -->
-  <header class="border-b border-slate-200 bg-white/90 backdrop-blur sticky top-0 z-40">
-    <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
-      <a href="https://choose.creditcard/" class="flex items-center gap-2">
-        <div class="h-8 w-8 rounded-full bg-sky-500 flex items-center justify-center text-xs font-bold text-white">
+  <header class="border-b border-slate-200 bg-white/80 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="h-9 w-9 rounded-full bg-slate-900 flex items-center justify-center text-xs font-bold text-sky-300">
           CC
         </div>
         <div class="flex flex-col leading-tight">
           <span class="font-semibold tracking-tight">Choose.Creditcard</span>
-          <span class="text-[11px] text-slate-500">Independent card comparison</span>
+          <span class="text-[11px] text-slate-500">Business &amp; freelance hub · The CreditCard Collection</span>
         </div>
-      </a>
+      </div>
 
-      <nav class="hidden md:flex gap-5 text-sm text-slate-600">
-        <a href="/compare" class="hover:text-slate-900">Compare</a>
-        <a href="/guides/apr" class="hover:text-slate-900">APR</a>
-        <a href="/guides/credit-vs-debit" class="hover:text-slate-900">Credit vs debit</a>
-        <a href="/faq" class="hover:text-slate-900">FAQ</a>
+      <nav class="hidden md:flex gap-6 text-sm text-slate-600">
+        <a href="/" class="hover:text-slate-900">Home</a>
+        <a href="/travel/" class="hover:text-slate-900">Travel &amp; FX</a>
+        <a href="/rewards/" class="hover:text-slate-900">Rewards</a>
+        <a href="/cashback/" class="hover:text-slate-900">Cashback</a>
+        <a href="/business/" class="text-slate-900 font-semibold">Business</a>
+        <a href="/student/" class="hover:text-slate-900">Student</a>
+        <a href="https://fin.creditcard/?utm_source=choose.creditcard&utm_medium=referral&utm_campaign=nav_collection"
+           class="hover:text-slate-900">Collection</a>
       </nav>
 
-      <a href="/compare"
-         class="hidden sm:inline-flex text-xs md:text-sm bg-sky-500 hover:bg-sky-600 text-white font-semibold rounded-lg px-3 py-1.5 transition">
-        Start comparing
+      <a href="mailto:support@ronarn.com"
+         class="text-xs md:text-sm bg-slate-900 hover:bg-slate-800 text-slate-50 font-semibold rounded-lg px-3 py-1.5 transition">
+        Contact
       </a>
     </div>
   </header>
 
-  <main class="max-w-5xl mx-auto px-4 py-10">
+  <main>
+    <!-- Hero -->
+    <section class="max-w-6xl mx-auto px-4 pt-8 pb-6">
+      <div class="grid md:grid-cols-2 gap-8 items-start">
+        <div>
+          <p class="text-xs uppercase tracking-[0.25em] text-slate-500 mb-3">
+            Business &amp; freelance cards · Prototype hub
+          </p>
+          <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-4">
+            Business &amp; freelance cards<br class="hidden md:block" />
+            <span class="text-sky-600">built around how you actually work.</span>
+          </h1>
+          <p class="text-slate-600 leading-relaxed mb-4 text-sm md:text-base">
+            This sub-hub on Choose.Creditcard looks at cards aimed at companies, freelancers and side hustles.
+            The focus is on <strong>expense controls, accounting tools and real costs</strong> – not just
+            sign-up bonuses. Everything here is a <strong class="font-semibold">prototype and educational only</strong>.
+          </p>
 
-    <!-- HERO -->
-    <section class="mb-10">
-      <p class="text-xs uppercase tracking-[0.25em] text-sky-500 mb-3">
-        Business · Corporate
-      </p>
-      <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-4">
-        Business & Corporate Credit Cards
-      </h1>
-      <p class="text-slate-600 max-w-2xl">
-        Business cards help companies manage expenses, issue employee cards, earn rewards on company spending
-        and keep personal and business finances separate.
-      </p>
-    </section>
-
-    <!-- What is a business card -->
-    <section class="mb-10">
-      <h2 class="text-xl font-semibold mb-3">What is a business credit card?</h2>
-      <p class="text-slate-700 text-sm mb-4">
-        A business card is issued to companies (small or large) and used by employees or owners.
-        Limits, controls and perks differ from consumer cards.
-      </p>
-
-      <div class="grid md:grid-cols-2 gap-4">
-        <div class="border border-slate-200 rounded-xl bg-white p-4">
-          <h3 class="font-semibold mb-1">Why companies use them</h3>
-          <ul class="text-sm text-slate-600 list-disc ml-5 space-y-1">
-            <li>Separate personal and business expenses</li>
-            <li>Centralized expense tracking</li>
-            <li>Easier accounting & VAT reporting</li>
-            <li>Higher limits for company purchases</li>
+          <h2 class="text-sm font-semibold text-slate-800 mb-2">
+            When this type of card makes sense
+          </h2>
+          <ul class="text-sm text-slate-600 space-y-1 mb-5 list-disc list-inside">
+            <li>You run a company, freelance business or side project with recurring expenses.</li>
+            <li>You want to <strong>separate business and personal spending</strong> for accounting and tax.</li>
+            <li>You need employee cards, virtual cards or spend limits to control costs.</li>
+            <li>You care more about <strong>clean bookkeeping and tools</strong> than flashy consumer perks.</li>
           </ul>
+
+          <div class="flex flex-wrap items-center gap-3">
+            <a href="#table"
+               class="inline-flex items-center gap-2 bg-sky-600 hover:bg-sky-500 text-white font-semibold rounded-lg px-4 py-2 text-sm transition">
+              View business comparison prototype
+              <span aria-hidden="true">↓</span>
+            </a>
+            <a href="#microsites" class="text-xs text-slate-600 hover:text-slate-900 underline underline-offset-4">
+              Explore related business microsites
+            </a>
+          </div>
+
+          <p class="mt-3 text-[11px] text-slate-500">
+            This page does not recommend any real products yet. Card names, limits and tools below are placeholders.
+            Always check the issuer’s own documentation and local regulations before applying or relying on features.
+          </p>
         </div>
 
-        <div class="border border-slate-200 rounded-xl bg-white p-4">
-          <h3 class="font-semibold mb-1">Advanced features</h3>
-          <ul class="text-sm text-slate-600 list-disc ml-5 space-y-1">
-            <li>Employee cards with limits</li>
-            <li>Category-based controls</li>
-            <li>Integrated software approvals</li>
-            <li>Sync with accounting platforms</li>
-          </ul>
+        <div class="bg-white border border-slate-200 rounded-2xl shadow-sm p-5 md:p-6">
+          <p class="text-sm font-semibold text-slate-800 mb-3">
+            Business profiles (prototype)
+          </p>
+          <div class="grid grid-cols-2 gap-3 text-xs">
+            <button class="border border-slate-200 rounded-lg px-3 py-2 text-left hover:border-sky-400 hover:bg-sky-50">
+              🧾 Solo freelancer<br>
+              <span class="text-slate-500">Invoices, software, travel, small buys.</span>
+            </button>
+            <button class="border border-slate-200 rounded-lg px-3 py-2 text-left hover:border-sky-400 hover:bg-sky-50">
+              👥 Small team / agency<br>
+              <span class="text-slate-500">Employee cards, card policies, budgets.</span>
+            </button>
+            <button class="border border-slate-200 rounded-lg px-3 py-2 text-left hover:border-sky-400 hover:bg-sky-50">
+              🌍 Remote-first company<br>
+              <span class="text-slate-500">FX, online spend, SaaS subscriptions.</span>
+            </button>
+            <button class="border border-slate-200 rounded-lg px-3 py-2 text-left hover:border-sky-400 hover:bg-sky-50">
+              🧪 Startup / scale-up<br>
+              <span class="text-slate-500">High spend, investor controls, runway.</span>
+            </button>
+          </div>
+          <p class="mt-4 text-[11px] text-slate-500">
+            Later, these profiles can link to country-specific business card options. For now they just show how
+            the business hub might be structured around real operating patterns.
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- Table -->
-    <section class="mb-10">
-      <h2 class="text-xl font-semibold mb-3">Business vs personal cards</h2>
-      <div class="overflow-x-auto rounded-xl border border-slate-200 bg-white">
-        <table class="min-w-full text-sm">
-          <thead class="bg-slate-50 text-slate-500">
-            <tr>
-              <th class="text-left px-4 py-2 border-b border-slate-200">Feature</th>
-              <th class="text-left px-4 py-2 border-b border-slate-200">Business card</th>
-              <th class="text-left px-4 py-2 border-b border-slate-200">Personal card</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="border-b border-slate-100">
-              <td class="px-4 py-2">Credit limit</td>
-              <td class="px-4 py-2">Higher, based on company spend</td>
-              <td class="px-4 py-2">Based on individual credit score</td>
-            </tr>
-            <tr class="border-b border-slate-100">
-              <td class="px-4 py-2">Employee cards</td>
-              <td class="px-4 py-2">Yes, with controls</td>
-              <td class="px-4 py-2">No</td>
-            </tr>
-            <tr>
-              <td class="px-4 py-2">Rewards</td>
-              <td class="px-4 py-2">Business categories & travel</td>
-              <td class="px-4 py-2">General consumer categories</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <!-- CTA to comparison -->
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-3">Compare business-friendly cards</h2>
-      <p class="text-sm text-slate-700 mb-4">
-        Before choosing a business card, compare limits, fees, travel perks and tools for expense control.
+    <!-- Card grid: microsites & future tables -->
+    <section id="microsites" class="max-w-6xl mx-auto px-4 pb-10">
+      <h2 class="text-xl font-semibold mb-2">Business resources in The CreditCard Collection</h2>
+      <p class="text-sm text-slate-600 mb-4">
+        These links go to other microsites in The CreditCard Collection. They cover payments, FX, card tech
+        and policies that matter for business use. All are independent, prototype educational pages – not issuer marketing.
       </p>
-      <a href="/compare?utm_source=business_page&utm_medium=internal&utm_campaign=choose_guides"
-         class="inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white font-semibold rounded-lg px-4 py-2 text-sm transition">
-        Compare cards
-      </a>
-    </section>
 
-    <!-- Subpages -->
-    <section class="mb-16">
-      <h2 class="text-xl font-semibold mb-3">Business sub-guides</h2>
-      <div class="grid md:grid-cols-2 gap-4">
-        <a href="/business/expense" class="border border-slate-200 rounded-xl bg-white p-4 hover:bg-slate-50 transition">
-          <h3 class="font-semibold">Expense cards</h3>
-          <p class="text-sm text-slate-600">Employee spending controls and real-time monitoring.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <!-- Fin.creditcard -->
+        <a class="block bg-white border border-slate-200 rounded-2xl shadow-sm p-4 hover:border-sky-400 hover:shadow-md transition"
+           href="https://fin.creditcard/?utm_source=choose.creditcard&utm_medium=referral&utm_campaign=hub_business">
+          <h3 class="text-sm font-semibold text-slate-900 mb-1">Fin.Creditcard</h3>
+          <p class="text-xs text-slate-600 mb-2">
+            Broader context on card payments, virtual cards, tap-to-pay and how modern business cards are structured.
+          </p>
+          <p class="text-[11px] text-slate-500">
+            External microsite · payments &amp; tech
+          </p>
+        </a>
+
+        <!-- Travels.creditcard -->
+        <a class="block bg-white border border-slate-200 rounded-2xl shadow-sm p-4 hover:border-sky-400 hover:shadow-md transition"
+           href="https://travels.creditcard/?utm_source=choose.creditcard&utm_medium=referral&utm_campaign=hub_business">
+          <h3 class="text-sm font-semibold text-slate-900 mb-1">Travels.Creditcard</h3>
+          <p class="text-xs text-slate-600 mb-2">
+            Business travel use-cases: FX fees, airport lounges and insurance for trips paid with company cards.
+          </p>
+          <p class="text-[11px] text-slate-500">
+            External microsite · travel context
+          </p>
+        </a>
+
+        <!-- Policies.creditcard -->
+        <a class="block bg-white border border-slate-200 rounded-2xl shadow-sm p-4 hover:border-sky-400 hover:shadow-md transition"
+           href="https://policies.creditcard/?utm_source=choose.creditcard&utm_medium=referral&utm_campaign=hub_business">
+          <h3 class="text-sm font-semibold text-slate-900 mb-1">Policies.Creditcard</h3>
+          <p class="text-xs text-slate-600 mb-2">
+            Network-wide policies on how business use, risk and compliance are described across The CreditCard Collection.
+          </p>
+          <p class="text-[11px] text-slate-500">
+            External microsite · editorial standards
+          </p>
         </a>
       </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <!-- CompareCC.creditcard -->
+        <a class="block bg-white border border-slate-200 rounded-2xl shadow-sm p-4 hover:border-sky-400 hover:shadow-md transition"
+           href="https://comparecc.creditcard/?utm_source=choose.creditcard&utm_medium=referral&utm_campaign=hub_business">
+          <h3 class="text-sm font-semibold text-slate-900 mb-1">CompareCC.Creditcard</h3>
+          <p class="text-xs text-slate-600 mb-2">
+            Comparison layouts used as a reference when building business card tables later on.
+          </p>
+          <p class="text-[11px] text-slate-500">
+            Structural reference · not a recommendation.
+          </p>
+        </a>
+
+        <!-- Future guide placeholder 1 -->
+        <div class="bg-white border border-dashed border-slate-300 rounded-2xl shadow-sm p-4">
+          <h3 class="text-sm font-semibold text-slate-900 mb-1">Example: “Company vs. personal card for business”</h3>
+          <p class="text-xs text-slate-600 mb-2">
+            Placeholder for a guide about separating business and personal expenses, and documentation to keep.
+          </p>
+          <p class="text-[11px] text-slate-500">
+            To be replaced with a documented article.
+          </p>
+        </div>
+
+        <!-- Future guide placeholder 2 -->
+        <div class="bg-white border border-dashed border-slate-300 rounded-2xl shadow-sm p-4">
+          <h3 class="text-sm font-semibold text-slate-900 mb-1">Example: “Expense policies & virtual cards”</h3>
+          <p class="text-xs text-slate-600 mb-2">
+            Placeholder for a future explainer on using virtual cards, per-card limits and spend rules for teams.
+          </p>
+          <p class="text-[11px] text-slate-500">
+            Future article under Choose.Creditcard.
+          </p>
+        </div>
+      </div>
     </section>
 
+    <!-- Comparison table -->
+    <section id="table" class="max-w-6xl mx-auto px-4 pb-12">
+      <h2 class="text-xl font-semibold mb-3">Business &amp; freelance card comparison (prototype)</h2>
+      <p class="text-sm text-slate-600 mb-4">
+        This table only illustrates how business-focused cards could be compared on Choose.Creditcard.
+        The products, tools and limits are <strong class="font-semibold">not real offers</strong>.
+        Replace everything below with country-specific, documented issuer data later.
+      </p>
+
+      <div class="bg-white border border-slate-200 rounded-2xl shadow-sm overflow-hidden">
+        <div class="overflow-x-auto">
+          <table class="min-w-full text-left text-sm">
+            <thead class="bg-slate-50 border-b border-slate-200">
+              <tr class="text-xs uppercase tracking-wide text-slate-500">
+                <th class="px-4 py-3 font-semibold">Card</th>
+                <th class="px-4 py-3 font-semibold">Ideal use-case</th>
+                <th class="px-4 py-3 font-semibold">Employee / virtual cards</th>
+                <th class="px-4 py-3 font-semibold">Accounting &amp; exports</th>
+                <th class="px-4 py-3 font-semibold">Limits &amp; controls</th>
+                <th class="px-4 py-3 font-semibold">Annual fee</th>
+                <th class="px-4 py-3 font-semibold text-right">Status</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              <!-- Example row 1 -->
+              <tr class="hover:bg-slate-50">
+                <td class="px-4 py-3">
+                  <div class="font-semibold text-slate-900 text-sm">Example Freelance Business Card A</div>
+                  <div class="text-xs text-slate-500">Solo operator / micro business</div>
+                </td>
+                <td class="px-4 py-3 text-sm">
+                  Consolidate software, advertising and travel expenses for one-person businesses.
+                </td>
+                <td class="px-4 py-3 text-sm">
+                  1 physical + a few virtual cards for subscriptions.
+                </td>
+                <td class="px-4 py-3 text-sm">
+                  Basic CSV exports, simple integration with popular accounting tools.
+                </td>
+                <td class="px-4 py-3 text-sm">
+                  Single main limit, basic category tracking in app.
+                </td>
+                <td class="px-4 py-3 text-sm">€60 / year</td>
+                <td class="px-4 py-3 text-right">
+                  <span class="inline-flex items-center justify-center text-[11px] font-semibold px-3 py-1.5 rounded-lg border border-slate-300 text-slate-600">
+                    Prototype only
+                  </span>
+                </td>
+              </tr>
+
+              <!-- Example row 2 -->
+              <tr class="hover:bg-slate-50">
+                <td class="px-4 py-3">
+                  <div class="font-semibold text-slate-900 text-sm">Example Team Card B</div>
+                  <div class="text-xs text-slate-500">Small agency / 5–20 employees</div>
+                </td>
+                <td class="px-4 py-3 text-sm">
+                  Multiple employees with individual cards, centralised billing and expense approvals.
+                </td>
+                <td class="px-4 py-3 text-sm">
+                  Up to 20 physical cards + virtual cards for projects; per-card rules.
+                </td>
+                <td class="px-4 py-3 text-sm">
+                  Direct integration to accounting systems, receipt capture and category mapping.
+                </td>
+                <td class="px-4 py-3 text-sm">
+                  Team budgets, merchant category blocks, per-transaction limits.
+                </td>
+                <td class="px-4 py-3 text-sm">€240 / year (example bundle)</td>
+                <td class="px-4 py-3 text-right">
+                  <span class="inline-flex items-center justify-center text-[11px] font-semibold px-3 py-1.5 rounded-lg border border-slate-300 text-slate-600">
+                    Prototype only
+                  </span>
+                </td>
+              </tr>
+
+              <!-- Example row 3 -->
+              <tr class="hover:bg-slate-50">
+                <td class="px-4 py-3">
+                  <div class="font-semibold text-slate-900 text-sm">Example No-Fee Business Card C</div>
+                  <div class="text-xs text-slate-500">Side hustles / low spend</div>
+                </td>
+                <td class="px-4 py-3 text-sm">
+                  Occasional business purchases with low fixed costs and basic tools.
+                </td>
+                <td class="px-4 py-3 text-sm">
+                  1–2 physical cards, no advanced virtual card features.
+                </td>
+                <td class="px-4 py-3 text-sm">
+                  Simple monthly PDF statements and CSV downloads.
+                </td>
+                <td class="px-4 py-3 text-sm">
+                  One shared limit; fewer granular controls.
+                </td>
+                <td class="px-4 py-3 text-sm">€0 / year</td>
+                <td class="px-4 py-3 text-right">
+                  <span class="inline-flex items-center justify-center text-[11px] font-semibold px-3 py-1.5 rounded-lg border border-slate-300 text-slate-600">
+                    Prototype only
+                  </span>
+                </td>
+              </tr>
+
+              <!-- Example row 4 -->
+              <tr class="hover:bg-slate-50">
+                <td class="px-4 py-3">
+                  <div class="font-semibold text-slate-900 text-sm">Example Scaled Business Card D</div>
+                  <div class="text-xs text-slate-500">High-growth startup / scale-up</div>
+                </td>
+                <td class="px-4 py-3 text-sm">
+                  High monthly spend, investor reporting, and complex approval chains.
+                </td>
+                <td class="px-4 py-3 text-sm">
+                  Many employee cards and virtual cards, with role-based permissions.
+                </td>
+                <td class="px-4 py-3 text-sm">
+                  Rich APIs, real-time feeds to accounting and FP&amp;A tools.
+                </td>
+                <td class="px-4 py-3 text-sm">
+                  Dynamic limits based on revenue, custom approval workflows.
+                </td>
+                <td class="px-4 py-3 text-sm">€400+ / year (example package)</td>
+                <td class="px-4 py-3 text-right">
+                  <span class="inline-flex items-center justify-center text-[11px] font-semibold px-3 py-1.5 rounded-lg border border-slate-300 text-slate-600">
+                    Prototype only
+                  </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="px-4 py-3 border-t border-slate-200 bg-slate-50 text-[11px] text-slate-500">
+          All rows above are illustrative only and do not describe any real card product. In a later version, this table
+          will be replaced with market-specific issuer data and clearly documented features. This page does not provide financial advice.
+        </div>
+      </div>
+    </section>
+
+    <!-- Methodology note -->
+    <section class="max-w-6xl mx-auto px-4 pb-16">
+      <h2 class="text-xl font-semibold mb-3">How this business hub fits into Choose.Creditcard</h2>
+      <div class="grid md:grid-cols-3 gap-6 text-sm text-slate-700">
+        <div class="bg-white border border-slate-200 rounded-2xl p-4">
+          <h3 class="font-semibold mb-2">1. Themed sub-hub</h3>
+          <p class="text-xs md:text-sm text-slate-600">
+            This page is a <strong>Business &amp; Freelance sub-hub</strong> under Choose.Creditcard.
+            It narrows the lens to company use, tools and controls, while the main /index keeps a broader overview
+            including consumer cards.
+          </p>
+        </div>
+        <div class="bg-white border border-slate-200 rounded-2xl p-4">
+          <h3 class="font-semibold mb-2">2. Operations-focused view</h3>
+          <p class="text-xs md:text-sm text-slate-600">
+            When real cards are added, the scoring will emphasise operational fit: expense management, export quality,
+            controls and total cost – not just rewards or sign-up bonuses.
+          </p>
+        </div>
+        <div class="bg-white border border-slate-200 rounded-2xl p-4">
+          <h3 class="font-semibold mb-2">3. Clear separation from issuers</h3>
+          <p class="text-xs md:text-sm text-slate-600">
+            No bank or issuer has paid to appear here. Future affiliate links, if any, will be clearly labeled
+            and will not change how cards are described or ordered in comparisons.
+          </p>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="border-t border-slate-200 py-6 text-center text-xs text-slate-600 bg-white">
-    Part of <span class="text-slate-800 font-medium">The CreditCard Collection</span> —
-    built by <span class="text-slate-800 font-medium">ronarn</span> · Contact:
-    <a href="mailto:support@ronarn.com" class="underline underline-offset-4">support@ronarn.com</a>
-  </footer>
+  <!-- Footer (sub-hub wording) -->
+  <footer class="border-t border-slate-200 bg-slate-50/80 mt-12">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-6 md:gap-10">
+        
+        <!-- About the network -->
+        <div class="md:w-1/2">
+          <h2 class="text-sm font-semibold tracking-wide text-slate-700 uppercase">
+            About this sub-hub
+          </h2>
+          <p class="mt-3 text-sm leading-relaxed text-slate-600">
+            This Business &amp; Freelance page is a themed sub-hub under
+            <a href="/" class="font-medium text-slate-800 hover:text-slate-900 hover:underline">Choose.Creditcard</a>,
+            the main comparison site in The CreditCard Collection – an independent credit card comparison
+            and finance education network operated by ronarn AS (Norway).
+          </p>
 
+          <p class="text-xs text-slate-500 mt-1">
+            Prototype &amp; educational only. Card rows and examples do not describe real products.
+            Future rankings will be based on issuer documentation and clear criteria, not sponsorships.
+          </p>
+
+          <p class="mt-3 text-sm text-slate-600">
+            For any questions related to The CreditCard Collection, contact:
+            <a href="mailto:support@cc.creditcard" class="font-medium text-slate-700 hover:text-slate-900 hover:underline">
+              support@cc.creditcard
+            </a>
+          </p>
+        </div>
+
+        <!-- Legal links -->
+        <div class="md:w-1/2">
+          <h2 class="text-sm font-semibold tracking-wide text-slate-700 uppercase">
+            Legal &amp; Support
+          </h2>
+          <nav class="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
+            <a href="https://privacy.creditcard" class="text-slate-600 hover:text-slate-900 hover:underline">Privacy</a>
+            <a href="https://terms.creditcard" class="text-slate-600 hover:text-slate-900 hover:underline">Terms</a>
+            <a href="https://disclaimer.creditcard" class="text-slate-600 hover:text-slate-900 hover:underline">Disclaimer</a>
+            <a href="https://disclosure.creditcard" class="text-slate-600 hover:text-slate-900 hover:underline">Disclosure</a>
+            <a href="https://policies.creditcard" class="text-slate-600 hover:text-slate-900 hover:underline">Policies</a>
+            <a href="https://legal.creditcard" class="text-slate-600 hover:text-slate-900 hover:underline">Legal</a>
+            <a href="https://support.creditcard" class="text-slate-600 hover:text-slate-900 hover:underline">Support</a>
+            <a href="https://contact.creditcard" class="text-slate-600 hover:text-slate-900 hover:underline">Contact</a>
+          </nav>
+        </div>
+
+      </div>
+
+      <div class="mt-8 border-t border-slate-200 pt-4">
+        <p class="text-xs text-slate-500 text-center">
+          © 2025 The CreditCard Collection — ronarn AS. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
