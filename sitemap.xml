@@ -1,89 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-    <!-- Root -->
-    <url>
-        <loc>https://choose.creditcard/</loc>
-        <priority>1.0</priority>
-        <changefreq>daily</changefreq>
-    </url>
+  <!-- ROOT -->
+  <url>
+    <loc>https://choose.creditcard/</loc>
+    <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url>
 
-    <!-- Banking -->
-    <url>
-        <loc>https://choose.creditcard/banking/</loc>
-        <priority>0.8</priority>
-    </url>
+  <!-- HUBS -->
+  <url><loc>https://choose.creditcard/travel/</loc><priority>0.9</priority></url>
+  <url><loc>https://choose.creditcard/rewards/</loc><priority>0.9</priority></url>
+  <url><loc>https://choose.creditcard/cashback/</loc><priority>0.9</priority></url>
+  <url><loc>https://choose.creditcard/protections/</loc><priority>0.9</priority></url>
+  <url><loc>https://choose.creditcard/loyalty/</loc><priority>0.9</priority></url>
+  <url><loc>https://choose.creditcard/business/</loc><priority>0.9</priority></url>
+  <url><loc>https://choose.creditcard/student/</loc><priority>0.9</priority></url>
+  <url><loc>https://choose.creditcard/credit-score/</loc><priority>0.9</priority></url>
+  <url><loc>https://choose.creditcard/benefits/</loc><priority>0.9</priority></url>
 
-    <!-- Business Cards -->
-    <url>
-        <loc>https://choose.creditcard/business/</loc>
-        <priority>0.8</priority>
-    </url>
+  <!-- GUIDES INDEX -->
+  <url>
+    <loc>https://choose.creditcard/guides/</loc>
+    <priority>0.8</priority>
+  </url>
 
-    <!-- Credit Builder -->
-    <url>
-        <loc>https://choose.creditcard/creditbuilder/</loc>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- Invest / Investment Cards -->
-    <url>
-        <loc>https://choose.creditcard/invest/</loc>
-        <priority>0.7</priority>
-    </url>
-
-    <!-- No Fee Cards -->
-    <url>
-        <loc>https://choose.creditcard/nofee/</loc>
-        <priority>0.9</priority>
-    </url>
-
-    <!-- Poor Credit -->
-    <url>
-        <loc>https://choose.creditcard/poorcredit/</loc>
-        <priority>0.7</priority>
-    </url>
-
-    <!-- Prepaid Cards -->
-    <url>
-        <loc>https://choose.creditcard/prepaid/</loc>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- Reward Cards -->
-    <url>
-        <loc>https://choose.creditcard/reward/</loc>
-        <priority>0.9</priority>
-    </url>
-
-    <!-- Rewards Guides -->
-    <url>
-        <loc>https://choose.creditcard/rewards/</loc>
-        <priority>0.7</priority>
-    </url>
-
-    <!-- Secured Cards -->
-    <url>
-        <loc>https://choose.creditcard/secured/</loc>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- Security / Protection Guide -->
-    <url>
-        <loc>https://choose.creditcard/security/</loc>
-        <priority>0.7</priority>
-    </url>
-
-    <!-- Student Cards -->
-    <url>
-        <loc>https://choose.creditcard/student/</loc>
-        <priority>0.9</priority>
-    </url>
-
-    <!-- Travel Rewards -->
-    <url>
-        <loc>https://choose.creditcard/travelrewards/</loc>
-        <priority>0.9</priority>
-    </url>
+  <!-- GUIDES – INDIVIDUAL PAGES -->
+  <!-- (Legger inn alle vi vet du har opprettet) -->
+  <url><loc>https://choose.creditcard/guides/travel-insurance/</loc><priority>0.7</priority></url>
+  <url><loc>https://choose.creditcard/guides/airport-lounge-access/</loc><priority>0.7</priority></url>
+  <url><loc>https://choose.creditcard/guides/premium-benefits-cards/</loc><priority>0.7</priority></url>
+  <url><loc>https://choose.creditcard/guides/no-foreign-fees/</loc><priority>0.7</priority></url>
+  <url><loc>https://choose.creditcard/guides/cashback-basics/</loc><priority>0.7</priority></url>
+  <url><loc>https://choose.creditcard/guides/how-credit-scores-work/</loc><priority>0.7</priority></url>
+  <url><loc>https://choose.creditcard/guides/secured-cards-explained/</loc><priority>0.7</priority></url>
+  <url><loc>https://choose.creditcard/guides/student-first-card/</loc><priority>0.7</priority></url>
+  <url><loc>https://choose.creditcard/guides/business-credit-cards/</loc><priority>0.7</priority></url>
+  <url><loc>https://choose.creditcard/guides/protections-overview/</loc><priority>0.7</priority></url>
+  <url><loc>https://choose.creditcard/guides/loyalty-programs-overview/</loc><priority>0.7</priority></url>
+  <url><loc>https://choose.creditcard/guides/card-fees-explained/</loc><priority>0.7</priority></url>
 
 </urlset>
