@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Comparison &amp; Methodology – Choose.Creditcard</title>
+  <meta name="description"
+        content="Comparison & methodology hub on Choose.Creditcard. Prototype explanation of how cards could be compared: data sources, scoring logic, documentation and affiliate independence." />
+  <link rel="canonical" href="https://choose.creditcard/compare/" />
+
+  <!-- SEO basics -->
+  <meta name="robots" content="index,follow" />
+  <meta name="keywords"
+        content="credit card comparison methodology, how we compare credit cards, scoring model, data sources, documentation based comparison, choose.creditcard" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Comparison &amp; Methodology – Choose.Creditcard" />
+  <meta property="og:description"
+        content="Sub-hub on Choose.Creditcard that explains the comparison methodology: data sources, scoring, documentation and affiliate independence. Prototype & educational only." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://choose.creditcard/compare/" />
+  <meta property="og:image" content="https://choose.creditcard/preview.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Comparison &amp; Methodology – Choose.Creditcard" />
+  <meta name="twitter:description"
+        content="Comparison & methodology sub-hub of The CreditCard Collection by ronarn. Prototype and educational only." />
+  <meta name="twitter:image" content="https://choose.creditcard/preview.png" />
+
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="/styles.css" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-64FE63JQ3H"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-64FE63JQ3H');
+  </script>
+</head>
+
+<body class="bg-slate-50 text-slate-900">
+  <!-- Header -->
+  <header class="border-b border-slate-200 bg-white/80 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="h-9 w-9 rounded-full bg-slate-900 flex items-center justify-center text-xs font-bold text-sky-300">
+          CC
+        </div>
+        <div class="flex flex-col leading-tight">
+          <span class="font-semibold tracking-tight">Choose.Creditcard</span>
+          <span class="text-[11px] text-slate-500">Comparison &amp; methodology hub · The CreditCard Collection</span>
+        </div>
+      </div>
+
+      <nav class="hidden md:flex gap-6 text-sm text-slate-600">
+        <a href="/" class="hover:text-slate-900">Home</a>
+        <a href="/compare/" class="text-slate-900 font-semibold">Methodology</a>
+        <a href="/travel/" class="hover:text-slate-900">Travel &amp; FX</a>
+        <a href="/rewards/" class="hover:text-slate-900">Rewards</a>
+        <a href="/technology/" class="hover:text-slate-900">Technology</a>
+        <a href="https://fin.creditcard/?utm_source=choose.creditcard&utm_medium=referral&utm_campaign=nav_collection"
+           class="hover:text-slate-900">Collection</a>
+      </nav>
+
+      <a href="mailto:support@ronarn.com"
+         class="text-xs md:text-sm bg-slate-900 hover:bg-slate-800 text-slate-50 font-semibold rounded-lg px-3 py-1.5 transition">
+        Contact
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="max-w-6xl mx-auto px-4 pt-8 pb-6">
+      <div class="grid md:grid-cols-2 gap-8 items-start">
+        <div>
+          <p class="text-xs uppercase tracking-[0.25em] text-slate-500 mb-3">
+            Comparison &amp; methodology · Prototype hub
+          </p>
+          <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-4">
+            How Choose.Creditcard<br class="hidden md:block" />
+            <span class="text-sky-600">could compare credit cards.</span>
+          </h1>
+          <p class="text-slate-600 leading-relaxed mb-4 text-sm md:text-base">
+            This sub-hub on Choose.Creditcard explains – in prototype form – <span class="font-semibold">how cards
+            might be compared once real issuer data and compliance checks are in place</span>. It focuses on
+            documentation, transparent scoring and conflict-of-interest handling. Everything here is
+            <strong class="font-semibold">illustrative and educational only</strong>.
+          </p>
+
+          <h2 class="text-sm font-semibold text-slate-800 mb-2">
+            What this methodology page is for
+          </h2>
+          <ul class="text-sm text-slate-600 space-y-1 mb-3 list-disc list-inside">
+            <li>Showing how a documentation-based comparison model could be structured.</li>
+            <li>Explaining which <span class="font-semibold">data points actually matter</span> for travel, rewards,
+                technology, protections and costs.</li>
+            <li>Making affiliate relationships and potential conflicts visible in plain language.</li>
+            <li>Providing a single reference that other hubs like
+                <a href="/travel/" class="underline underline-offset-2">/travel/</a> and
+                <a href="/rewards/" class="underline underline-offset-2">/rewards/</a> can link back to.</li>
+          </ul>
+
+          <h2 class="text-sm font-semibold text-slate-800 mb-2">
+            What this page is not
+          </h2>
+          <ul class="text-sm text-slate-600 space-y-1 mb-5 list-disc list-inside">
+            <li>It is <span class="font-semibold">not</span> a legally binding description of how any current product is ranked.</li>
+            <li>It is <span class="font-semibold">not</span> personal financial advice or a recommendation to apply.</li>
+            <li>It is <span class="font-semibold">not</span> exhaustive – local regulation and lender policies always come first.</li>
+            <li>It is <span class="font-semibold">not</span> a replacement for issuer documentation or key information documents.</li>
+          </ul>
+
+          <div class="flex flex-wrap items-center gap-3">
+            <a href="#table"
+               class="inline-flex items-center gap-2 bg-sky-600 hover:bg-sky-500 text-white font-semibold rounded-lg px-4 py-2 text-sm transition">
+              View comparison dimensions prototype
+              <span aria-hidden="true">↓</span>
+            </a>
+            <a href="#microsites" class="text-xs text-slate-600 hover:text-slate-900 underline underline-offset-4">
+              See structural &amp; comparison microsites
+            </a>
+          </div>
+
+          <p class="mt-3 text-[11px] text-slate-500">
+            This page does not describe any live ranking engine. Terms like “score”, “weight” and “dimension” are used
+            for illustration only. Any future live comparison will be clearly labeled and backed by documented,
+            country-specific criteria.
+          </p>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-2xl shadow-sm p-5 md:p-6">
+          <p class="text-sm font-semibold text-slate-800 mb-3">
+            Prototype comparison pillars
+          </p>
+          <div class="grid grid-cols-2 gap-3 text-xs">
+            <button class="border border-slate-200 rounded-lg px-3 py-2 text-left hover:border-sky-400 hover:bg-sky-50">
+              🧾 Documentation first<br>
+              <span class="text-slate-500">Terms, fees, insurance and FX from issuer PDFs – not marketing slogans.</span>
+            </button>
+            <button class="border border-slate-200 rounded-lg px-3 py-2 text-left hover:border-sky-400 hover:bg-sky-50">
+              ⚖️ Transparent weighting<br>
+              <span class="text-slate-500">Clear, documented logic for how different factors might be weighted.</span>
+            </button>
+            <button class="border border-slate-200 rounded-lg px-3 py-2 text-left hover:border-sky-400 hover:bg-sky-50">
+              🔍 Verifiable data<br>
+              <span class="text-slate-500">Timestamps and references so facts can be checked and updated.</span>
+            </button>
+            <button class="border border-slate-200 rounded-lg px-3 py-2 text-left hover:border-sky-400 hover:bg-sky-50">
+              🧩 Hub-specific views<br>
+              <span class="text-slate-500">Different hubs spotlight different subsets of the same data.</span>
+            </button>
+          </div>
+          <p class="mt-4 text-[11px] text-slate-500">
+            In a later phase, this methodology will be adapted per country and per product category, and surfaced
+            through interactive tables on <a href="/" class="underline underline-offset-2 text-slate-700 hover:text-slate-900">/</a>
+            and hubs like <a href="/travel/" class="underline underline-offset-2 text-slate-700 hover:text-slate-900">/travel/</a>,
+            <a href="/rewards/" class="underline underline-offset-2 text-slate-700 hover:text-slate-900">/rewards/</a> and
+            <a href="/technology/" class="underline underline-offset-2 text-slate-700 hover:text-slate-900">/technology/</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Structural microsites & overview -->
+    <section id="microsites" class="max-w-6xl mx-auto px-4 pb-10">
+      <h2 class="text-xl font-semibold mb-2">Structural &amp; comparison resources in The CreditCard Collection</h2>
+      <p class="text-sm text-slate-600 mb-4">
+        These links go to other structural microsites in The CreditCard Collection. They show how comparisons,
+        disclosures and legal text could be organised across the network. All are independent, prototype educational
+        pages – not issuer marketing.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <!-- CompareCC.creditcard -->
+        <a class="block bg-white border border-slate-200 rounded-2xl shadow-sm p-4 hover:border-sky-400 hover:shadow-md transition"
+           href="https://comparecc.creditcard/?utm_source=choose.creditcard&utm_medium=referral&utm_campaign=hub_compare">
+          <h3 class="text-sm font-semibold text-slate-900 mb-1">CompareCC.Creditcard</h3>
+          <p class="text-xs text-slate-600 mb-2">
+            Structural prototype for comparison tables and filters used across the network, including neutral language
+            and clear labeling of affiliate placements.
+          </p>
+          <p class="text-[11px] text-slate-500">
+            External microsite · table layout reference
+          </p>
+        </a>
+
+        <!-- Fin.Creditcard -->
+        <a class="block bg-white border border-slate-200 rounded-2xl shadow-sm p-4 hover:border-sky-400 hover:shadow-md transition"
+           href="https://fin.creditcard/?utm_source=choose.creditcard&utm_medium=referral&utm_campaign=hub_compare">
+          <h3 class="text-sm font-semibold text-slate-900 mb-1">Fin.Creditcard</h3>
+          <p class="text-xs text-slate-600 mb-2">
+            Conceptual hub for modern payment features (virtual cards, tap-to-pay, crypto, AI). Used as a reference
+            when building technology-focused comparison dimensions.
+          </p>
+          <p class="text-[11px] text-slate-500">
+            External microsite · tech &amp; structure
+          </p>
+        </a>
+
+        <!-- Privacy / Terms / Disclaimer cluster -->
+        <a class="block bg-white border border-slate-200 rounded-2xl shadow-sm p-4 hover:border-sky-400 hover:shadow-md transition"
+           href="https://privacy.creditcard/?utm_source=choose.creditcard&utm_medium=referral&utm_campaign=hub_compare">
+          <h3 class="text-sm font-semibold text-slate-900 mb-1">Privacy / Terms / Disclaimer</h3>
+          <p class="text-xs text-slate-600 mb-2">
+            The legal cluster (privacy, terms, disclaimer, disclosure and policies) supports the comparison methodology
+            with clear wording around independence and data use.
+          </p>
+          <p class="text-[11px] text-slate-500">
+            External microsites · legal backbone
+          </p>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <!-- Guides overview link -->
+        <div class="bg-white border border-slate-200 rounded-2xl shadow-sm p-4">
+          <h3 class="text-sm font-semibold text-slate-900 mb-1">Guides &amp; education</h3>
+          <p class="text-xs text-slate-600 mb-2">
+            The <a href="/guides/" class="underline underline-offset-2 text-slate-700 hover:text-slate-900">/guides/</a>
+            section will host longer-form explainers on APR, credit scores, protections and travel, all of which will
+            link back to this methodology hub when they reference comparison tables.
+          </p>
+          <p class="text-[11px] text-slate-500">
+            Internal Choose.Creditcard hub · educational only
+          </p>
+        </div>
+
+        <!-- Future methodology update placeholder -->
+        <div class="bg-white border border-dashed border-slate-300 rounded-2xl shadow-sm p-4">
+          <h3 class="text-sm font-semibold text-slate-900 mb-1">Example: Country-specific methodology</h3>
+          <p class="text-xs text-slate-600 mb-2">
+            Placeholder for future pages that adapt this methodology to specific markets (for example EU, US or UK),
+            where local regulation and disclosure rules differ.
+          </p>
+          <p class="text-[11px] text-slate-500">
+            To be replaced with real, documented country pages.
+          </p>
+        </div>
+
+        <!-- Future audit / verification placeholder -->
+        <div class="bg-white border border-dashed border-slate-300 rounded-2xl shadow-sm p-4">
+          <h3 class="text-sm font-semibold text-slate-900 mb-1">Example: Audit &amp; verification log</h3>
+          <p class="text-xs text-slate-600 mb-2">
+            Placeholder for a future log page describing when comparison rules were updated, by whom, and how external
+            experts or auditors may have reviewed them.
+          </p>
+          <p class="text-[11px] text-slate-500">
+            Prototype only · shows intent to track changes over time.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison dimensions table -->
+    <section id="table" class="max-w-6xl mx-auto px-4 pb-12">
+      <h2 class="text-xl font-semibold mb-3">Prototype comparison dimensions</h2>
+      <p class="text-sm text-slate-600 mb-4">
+        This table shows how different <span class="font-semibold">comparison dimensions</span> could be defined in a
+        documentation-based model. The descriptions, examples and relative weights below are illustrative only and do
+        not represent a live scoring engine.
+      </p>
+
+      <div class="bg-white border border-slate-200 rounded-2xl shadow-sm overflow-hidden">
+        <div class="overflow-x-auto">
+          <table class="min-w-full text-left text-sm">
+            <thead class="bg-slate-50 border-b border-slate-200">
+              <tr class="text-xs uppercase tracking-wide text-slate-500">
+                <th class="px-4 py-3 font-semibold">Dimension (prototype)</th>
+                <th class="px-4 py-3 font-semibold">What it describes</th>
+                <th class="px-4 py-3 font-semibold">Typical data sources</th>
+                <th class="px-4 py-3 font-semibold">Example hubs that use it</th>
+                <th class="px-4 py-3 font-semibold">Illustrative importance</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              <!-- FX & fees -->
+              <tr class="hover:bg-slate-50">
+                <td class="px-4 py-3">
+                  <div class="font-semibold text-slate-900 text-sm">FX &amp; payment fees</div>
+                  <div class="text-xs text-slate-500">Foreign use &amp; everyday costs</div>
+                </td>
+                <td class="px-4 py-3 text-sm">
+                  How much it costs to use the card abroad or in foreign currencies, including FX markups, cash
+                  withdrawal fees and surcharges.
+                </td>
+                <td class="px-4 py-3 text-sm">
+                  Issuer pricing lists, fee tables, cardholder agreements, FX footnotes.
+                </td>
+                <td class="px-4 py-3 text-sm">
+                  <a href="/travel/" class="underline underline-offset-2">/travel/</a>,
+                  <a href="/cashback/" class="underline underline-offset-2">/cashback/</a>
+                </td>
+                <td class="px-4 py-3 text-sm">High for travel-focused comparisons.</td>
+              </tr>
+
+              <!-- Protections -->
+              <tr class="hover:bg-slate-50">
+                <td class="px-4 py-3">
+                  <div class="font-semibold text-slate-900 text-sm">Protections &amp; insurance</div>
+                  <div class="text-xs text-slate-500">Coverage depth &amp; conditions</div>
+                </td>
+                <td class="px-4 py-3 text-sm">
+                  Which protections are included (travel, purchase, rental car, extended warranty), plus key limits,
+                  exclusions and claim processes.
+                </td>
+                <td class="px-4 py-3 text-sm">
+                  Insurance booklets, benefit guides, summary of coverage PDFs.
+                </td>
+                <td class="px-4 py-3 text-sm">
+                  <a href="/protections/" class="underline underline-offset-2">/protections/</a>,
+                  <a href="/benefits/" class="underline underline-offset-2">/benefits/</a>
+                </td>
+                <td class="px-4 py-3 text-sm">High for family &amp; premium use-cases.</td>
+              </tr>
+
+              <!-- Rewards -->
+              <tr class="hover:bg-slate-50">
+                <td class="px-4 py-3">
+                  <div class="font-semibold text-slate-900 text-sm">Rewards &amp; earn structure</div>
+                  <div class="text-xs text-slate-500">Points, miles, cashback</div>
+                </td>
+                <td class="px-4 py-3 text-sm">
+                  How points, miles or cashback accrue across categories, including caps, expiry rules and redemption
+                  options.
+                </td>
+                <td class="px-4 py-3 text-sm">
+                  Rewards program T&amp;Cs, earn-rate tables, airline/hotel partner lists.
+                </td>
+                <td class="px-4 py-3 text-sm">
+                  <a href="/rewards/" class="underline underline-offset-2">/rewards/</a>,
+                  <a href="/loyalty/" class="underline underline-offset-2">/loyalty/</a>
+                </td>
+                <td class="px-4 py-3 text-sm">High for rewards comparisons; medium elsewhere.</td>
+              </tr>
+
+              <!-- Technology & UX -->
+              <tr class="hover:bg-slate-50">
+                <td class="px-4 py-3">
+                  <div class="font-semibold text-slate-900 text-sm">Technology &amp; app experience</div>
+                  <div class="text-xs text-slate-500">How the card works day to day</div>
+                </td>
+                <td class="px-4 py-3 text-sm">
+                  Support for virtual cards, tap-to-pay, wallets, controls (freezing, changing limits), alerts and
+                  security features.
+                </td>
+                <td class="px-4 py-3 text-sm">
+                  Issuer feature lists, app store descriptions, technical documentation where available.
+                </td>
+                <td class="px-4 py-3 text-sm">
+                  <a href="/technology/" class="underline underline-offset-2">/technology/</a>,
+                  <a href="/crypto/" class="underline underline-offset-2">/crypto/</a>
+                </td>
+                <td class="px-4 py-3 text-sm">Medium to high depending on user profile.</td>
+              </tr>
+
+              <!-- Credit profile & limits -->
+              <tr class="hover:bg-slate-50">
+                <td class="px-4 py-3">
+                  <div class="font-semibold text-slate-900 text-sm">Credit profile &amp; limits</div>
+                  <div class="text-xs text-slate-500">Who the card is designed for</div>
+                </td>
+                <td class="px-4 py-3 text-sm">
+                  Typical eligibility, how limits may change over time, and how the card fits into building or
+                  rebuilding a credit history.
+                </td>
+                <td class="px-4 py-3 text-sm">
+                  Product sheets, eligibility criteria, lender FAQs.
+                </td>
+                <td class="px-4 py-3 text-sm">
+                  <a href="/card-types/" class="underline underline-offset-2">/card-types/</a>,
+                  <a href="/student/" class="underline underline-offset-2">/student/</a>,
+                  <a href="/credit-score/" class="underline underline-offset-2">/credit-score/</a>
+                </td>
+                <td class="px-4 py-3 text-sm">High for starter &amp; rebuild use-cases.</td>
+              </tr>
+
+              <!-- Costs vs perceived value -->
+              <tr class="hover:bg-slate-50">
+                <td class="px-4 py-3">
+                  <div class="font-semibold text-slate-900 text-sm">Cost vs. perceived value</div>
+                  <div class="text-xs text-slate-500">What you give up vs. what you get</div>
+                </td>
+                <td class="px-4 py-3 text-sm">
+                  Relationship between annual fee, FX fees and perks such as lounges, insurance and status – expressed
+                  in neutral, scenario-based examples.
+                </td>
+                <td class="px-4 py-3 text-sm">
+                  Combination of fee tables, benefit guides and calculated example scenarios.
+                </td>
+                <td class="px-4 py-3 text-sm">
+                  <a href="/benefits/" class="underline underline-offset-2">/benefits/</a>,
+                  <a href="/travel/" class="underline underline-offset-2">/travel/</a>,
+                  <a href="/cashback/" class="underline underline-offset-2">/cashback/</a>
+                </td>
+                <td class="px-4 py-3 text-sm">Central to many comparisons, but always scenario-based.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="px-4 py-3 border-t border-slate-200 bg-slate-50 text-[11px] text-slate-500">
+          All dimensions and descriptions above are illustrative only and do not describe any active scoring system.
+          In a later version, this table will be replaced or extended with live, country-specific methodology pages.
+          This page does not provide financial advice or personalised recommendations.
+        </div>
+      </div>
+    </section>
+
+    <!-- Independence & conflicts note -->
+    <section class="max-w-6xl mx-auto px-4 pb-16">
+      <h2 class="text-xl font-semibold mb-3">Independence, data quality &amp; conflicts of interest</h2>
+      <div class="grid md:grid-cols-3 gap-6 text-sm text-slate-700">
+        <div class="bg-white border border-slate-200 rounded-2xl p-4">
+          <h3 class="font-semibold mb-2">1. Data collection &amp; verification</h3>
+          <p class="text-xs md:text-sm text-slate-600">
+            In a full version of Choose.Creditcard, all comparison data would be taken from <strong>primary
+            documentation</strong>: issuer PDFs, pricing lists and benefit guides. Each fact would be timestamped,
+            with a clear note of when it was last checked and which country or region it applies to.
+          </p>
+        </div>
+        <div class="bg-white border border-slate-200 rounded-2xl p-4">
+          <h3 class="font-semibold mb-2">2. Affiliate links &amp; paid placements</h3>
+          <p class="text-xs md:text-sm text-slate-600">
+            If an issuer ever pays a commission, this will be clearly marked (for example on a button label). The
+            intent is that <strong>paid status never changes the underlying comparison</strong>. Non-paying cards
+            should still appear and be described using the same criteria.
+          </p>
+        </div>
+        <div class="bg-white border border-slate-200 rounded-2xl p-4">
+          <h3 class="font-semibold mb-2">3. Scope &amp; limitations</h3>
+          <p class="text-xs md:text-sm text-slate-600">
+            The CreditCard Collection is independent, but still limited: it cannot see your full financial situation
+            or provide advice. This methodology hub is designed to show how comparisons could be made <em>if</em> you
+            choose to use them – always alongside issuer documents and, if needed, professional advice.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (sub-hub wording) -->
+  <footer class="border-t border-slate-200 bg-slate-50/80 mt-12">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-6 md:gap-10">
+        
+        <!-- About the network -->
+        <div class="md:w-1/2">
+          <h2 class="text-sm font-semibold tracking-wide text-slate-700 uppercase">
+            About this sub-hub
+          </h2>
+          <p class="mt-3 text-sm leading-relaxed text-slate-600">
+            This Comparison &amp; Methodology page is a themed sub-hub under
+            <a href="/" class="font-medium text-slate-800 hover:text-slate-900 hover:underline">Choose.Creditcard</a>,
+            the main comparison site in The CreditCard Collection – an independent credit card comparison
+            and finance education network operated by ronarn AS (Norway).
+          </p>
+
+          <p class="text-xs text-slate-500 mt-1">
+            Prototype &amp; educational only. Dimensions, examples and descriptions do not represent an active
+            scoring engine. Any future live methodology will be documented, dated and matched to specific markets.
+          </p>
+
+          <p class="mt-3 text-sm text-slate-600">
+            For any questions related to The CreditCard Collection, contact:
+            <a href="mailto:support@cc.creditcard" class="font-medium text-slate-700 hover:text-slate-900 hover:underline">
+              support@cc.creditcard
+            </a>
+          </p>
+        </div>
+
+        <!-- Legal links -->
+        <div class="md:w-1/2">
+          <h2 class="text-sm font-semibold tracking-wide text-slate-700 uppercase">
+            Legal &amp; Support
+          </h2>
+          <nav class="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
+            <a href="https://privacy.creditcard" class="text-slate-600 hover:text-slate-900 hover:underline">Privacy</a>
+            <a href="https://terms.creditcard" class="text-slate-600 hover:text-slate-900 hover:underline">Terms</a>
+            <a href="https://disclaimer.creditcard" class="text-slate-600 hover:text-slate-900 hover:underline">Disclaimer</a>
+            <a href="https://disclosure.creditcard" class="text-slate-600 hover:text-slate-900 hover:underline">Disclosure</a>
+            <a href="https://policies.creditcard" class="text-slate-600 hover:text-slate-900 hover:underline">Policies</a>
+            <a href="https://legal.creditcard" class="text-slate-600 hover:text-slate-900 hover:underline">Legal</a>
+            <a href="https://support.creditcard" class="text-slate-600 hover:text-slate-900 hover:underline">Support</a>
+            <a href="https://contact.creditcard" class="text-slate-600 hover:text-slate-900 hover:underline">Contact</a>
+          </nav>
+        </div>
+
+      </div>
+
+      <div class="mt-8 border-t border-slate-200 pt-4">
+        <p class="text-xs text-slate-500 text-center">
+          © 2025 The CreditCard Collection — ronarn AS. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
