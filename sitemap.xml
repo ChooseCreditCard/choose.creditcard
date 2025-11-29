@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Hovedside -->
+  <!-- Home -->
   <url>
     <loc>https://choose.creditcard/</loc>
     <lastmod>2025-11-29</lastmod>
@@ -9,99 +9,117 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- Hoved-hubs (eksisterende) -->
+  <!-- Core comparison + legacy sections -->
+  <url>
+    <loc>https://choose.creditcard/compare/</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://choose.creditcard/apr/</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://choose.creditcard/nofee/</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://choose.creditcard/rewards/</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://choose.creditcard/secured/</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://choose.creditcard/creditbuilder/</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://choose.creditcard/travelrewards/</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Main hubs (som på ny index.html) -->
   <url>
     <loc>https://choose.creditcard/travel/</loc>
     <lastmod>2025-11-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <url>
-    <loc>https://choose.creditcard/rewards/</loc>
-    <lastmod>2025-11-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
   <url>
     <loc>https://choose.creditcard/loyalty/</loc>
     <lastmod>2025-11-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://choose.creditcard/cashback/</loc>
     <lastmod>2025-11-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://choose.creditcard/protections/</loc>
     <lastmod>2025-11-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://choose.creditcard/business/</loc>
     <lastmod>2025-11-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://choose.creditcard/student/</loc>
     <lastmod>2025-11-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://choose.creditcard/credit-score/</loc>
     <lastmod>2025-11-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://choose.creditcard/benefits/</loc>
     <lastmod>2025-11-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://choose.creditcard/technology/</loc>
     <lastmod>2025-11-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- NYE sub-hubs -->
   <url>
     <loc>https://choose.creditcard/crypto/</loc>
     <lastmod>2025-11-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://choose.creditcard/card-types/</loc>
     <lastmod>2025-11-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <url>
-    <loc>https://choose.creditcard/compare/</loc>
-    <lastmod>2025-11-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <url>
     <loc>https://choose.creditcard/reviews/</loc>
     <lastmod>2025-11-29</lastmod>
@@ -109,19 +127,38 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Guides hub + FAQ -->
   <url>
     <loc>https://choose.creditcard/guides/</loc>
     <lastmod>2025-11-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
-
-  <!-- FAQ (hvis du har /faq/) -->
   <url>
     <loc>https://choose.creditcard/faq/</loc>
     <lastmod>2025-11-29</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Konkrete guides (eksempler du allerede bruker) -->
+  <url>
+    <loc>https://choose.creditcard/guides/travel-insurance/</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://choose.creditcard/guides/airport-lounge-access/</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://choose.creditcard/guides/premium-benefits-cards/</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
 </urlset>
