@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Digital Wallets & Mobile Payments – Credit Card Guide</title>
+  <meta name="description"
+        content="Learn how digital wallets and mobile payments work with credit cards: tokenization, device security, card selection and limitations." />
+  <link rel="canonical" href="https://choose.creditcard/guides/digital-wallets-mobile-payments/" />
+
+  <!-- SEO basics -->
+  <meta name="robots" content="index,follow" />
+  <meta name="keywords"
+        content="digital wallet, mobile payments, Apple Pay, Google Pay, wallet security, tokenization, in-app payments" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Digital Wallets & Mobile Payments – Credit Card Guide" />
+  <meta property="og:description"
+        content="Neutral explainer on how digital wallets connect to credit cards, including security, tokens and card selection." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://choose.creditcard/guides/digital-wallets-mobile-payments/" />
+  <meta property="og:image" content="https://choose.creditcard/preview.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Digital Wallets & Mobile Payments – Credit Card Guide" />
+  <meta name="twitter:description"
+        content="Educational guide to digital wallets, tokenization and mobile payments with credit cards." />
+  <meta name="twitter:image" content="https://choose.creditcard/preview.png" />
+
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="/styles.css" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-64FE63JQ3H"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-64FE63JQ3H');
+  </script>
+</head>
+
+<body class="bg-slate-50 text-slate-900">
+  <!-- Header -->
+  <header class="border-b border-slate-200 bg-white/80 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="h-9 w-9 rounded-full bg-slate-900 flex items-center justify-center text-xs font-bold text-sky-300">
+          CC
+        </div>
+        <div class="flex flex-col leading-tight">
+          <span class="font-semibold tracking-tight">Choose.Creditcard</span>
+          <span class="text-[11px] text-slate-500">Guides &amp; knowledge center · The CreditCard Collection</span>
+        </div>
+      </div>
+
+      <nav class="hidden md:flex gap-6 text-sm text-slate-600">
+        <a href="/" class="hover:text-slate-900">Home</a>
+        <a href="/technology/" class="hover:text-slate-900">Technology hub</a>
+        <a href="/guides/#topics" class="hover:text-slate-900">All guides</a>
+      </nav>
+
+      <a href="mailto:support@ronarn.com"
+         class="text-xs md:text-sm bg-slate-900 hover:bg-slate-800 text-slate-50 font-semibold rounded-lg px-3 py-1.5 transition">
+        Contact
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="max-w-6xl mx-auto px-4 pt-8 pb-6">
+      <div class="grid md:grid-cols-2 gap-8 items-start">
+        <div>
+          <p class="text-xs uppercase tracking-[0.25em] text-slate-500 mb-3">
+            Educational only · Wallets &amp; apps
+          </p>
+          <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-4">
+            Digital wallets &amp;<br class="hidden md:block" />
+            <span class="text-sky-600">mobile card payments.</span>
+          </h1>
+          <p class="text-slate-600 leading-relaxed mb-4 text-sm md:text-base">
+            Digital wallets store tokenized versions of your credit cards inside your phone, watch or browser.
+            They let you pay in stores, apps and on the web without typing the full card number each time.
+          </p>
+          <p class="text-slate-600 leading-relaxed mb-4 text-sm md:text-base">
+            This guide explains how wallets connect to issuers, how tokens differ from your physical card number,
+            and what to understand about device security and card selection.
+          </p>
+
+          <ul class="text-sm text-slate-600 space-y-1 mb-5 list-disc list-inside">
+            <li>How cards are added and verified inside wallets.</li>
+            <li>What payment tokens are and why they exist.</li>
+            <li>Where wallet payments show up on your card statement.</li>
+          </ul>
+
+          <div class="flex flex-wrap items-center gap-3">
+            <a href="/technology/?utm_source=guides_wallets&utm_medium=referral&utm_campaign=from_guide"
+               class="inline-flex items-center gap-2 border border-slate-300 bg-white text-slate-900 font-semibold rounded-lg px-4 py-2 text-sm hover:border-sky-400 hover:bg-sky-50 transition">
+              Go to Technology &amp; Payments hub
+            </a>
+          </div>
+
+          <p class="mt-3 text-[11px] text-slate-500">
+            Informational only. Not financial advice. Availability of wallets and features depends on country, issuer and device.
+          </p>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-2xl shadow-sm p-5 md:p-6 text-sm text-slate-700">
+          <p class="text-sm font-semibold text-slate-800 mb-3">
+            Typical wallet features
+          </p>
+          <ul class="space-y-2 text-xs text-slate-600 list-disc list-inside">
+            <li>Store multiple cards and pick one as default.</li>
+            <li>Pay in stores using tap-to-pay at NFC terminals.</li>
+            <li>Pay in apps and on websites with a single tap.</li>
+            <li>See recent transactions from the linked card.</li>
+            <li>Remotely remove a card from a lost device (through issuer or device account tools).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Adding a card -->
+    <section class="max-w-6xl mx-auto px-4 pb-8">
+      <h2 class="text-lg md:text-xl font-semibold mb-3">How cards are added and verified</h2>
+      <p class="text-sm text-slate-700 mb-3">
+        When you add a card to a wallet, the wallet provider sends card details to the issuer or network for
+        verification. The issuer may send you a text message, email or app notification to confirm that you
+        really control both the card and the device.
+      </p>
+      <p class="text-sm text-slate-700 mb-3">
+        If approved, the issuer returns a <strong>token</strong>: a device-specific number that replaces your
+        physical card number inside the wallet. This token is what gets used at checkout — the merchant never
+        sees your full underlying card details.
+      </p>
+    </section>
+
+    <!-- Section: Security model -->
+    <section class="max-w-6xl mx-auto px-4 pb-8">
+      <h2 class="text-lg md:text-xl font-semibold mb-3">Security model: device + token</h2>
+      <p class="text-sm text-slate-700 mb-3">
+        Wallet payments depend on both the security of your device and the wallet itself. Most wallets require:
+      </p>
+      <ul class="text-sm text-slate-700 list-disc list-inside mb-3">
+        <li>A screen lock (PIN, pattern or password).</li>
+        <li>Biometric confirmation (fingerprint or face) for most payments.</li>
+        <li>A separate device account (such as a platform account) to manage devices remotely.</li>
+      </ul>
+      <p class="text-sm text-slate-700 mb-3">
+        If a token or one device is compromised, issuers can usually revoke that token without cancelling
+        your physical card. That said, no system is perfect. It is still important to treat your phone as
+        a payment device and report suspicious activity promptly.
+      </p>
+    </section>
+
+    <!-- Section: Practical trade-offs -->
+    <section class="max-w-6xl mx-auto px-4 pb-10">
+      <h2 class="text-lg md:text-xl font-semibold mb-3">Everyday use and trade-offs</h2>
+      <p class="text-sm text-slate-700 mb-3">
+        Wallets make it easier to choose the “right” card at checkout — for example a travel card at airports
+        and a cashback card at supermarkets. However, some merchants may still process payments differently
+        depending on card network and country.
+      </p>
+      <p class="text-sm text-slate-700 mb-3">
+        Statements will usually look similar whether you paid with plastic or a wallet, but you may see
+        references to device tokens or wallet services in technical sections of your transaction details.
+      </p>
+
+      <p class="text-[11px] text-slate-500">
+        For more on how individual card features interact with wallets and tap-to-pay, visit the
+        <a href="/technology/?utm_source=guides_wallets&utm_medium=referral&utm_campaign=bottom"
+           class="font-medium hover:text-slate-900">Technology &amp; Payments hub</a>.
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 bg-slate-50/80 mt-12">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-6 md:gap-10">
+        <div class="md:w-1/2">
+          <h2 class="text-sm font-semibold tracking-wide text-slate-700 uppercase">
+            About the network
+          </h2>
+          <p class="mt-3 text-sm leading-relaxed text-slate-600">
+            Choose.Creditcard is part of The CreditCard Collection – an independent credit card
+            comparison and finance education network operated by ronarn AS (Norway).
+          </p>
+          <p class="text-xs text-slate-500 mt-1">
+            Independent &amp; unbiased. Explanations are based on documentation, not sponsorships.
+          </p>
+        </div>
+
+        <div class="md:w-1/2">
+          <h2 class="text-sm font-semibold tracking-wide text-slate-700 uppercase">
+            Legal &amp; Support
+          </h2>
+          <nav class="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
+            <a href="https://privacy.creditcard" class="text-slate-600 hover:text-slate-900 hover:underline">Privacy</a>
+            <a href="https://terms.creditcard" class="text-slate-600 hover:text-slate-900 hover:underline">Terms</a>
+            <a href="https://disclaimer.creditcard" class="text-slate-600 hover:text-slate-900 hover:underline">Disclaimer</a>
+            <a href="https://disclosure.creditcard" class="text-slate-600 hover:text-slate-900 hover:underline">Disclosure</a>
+            <a href="https://policies.creditcard" class="text-slate-600 hover:text-slate-900 hover:underline">Policies</a>
+            <a href="https://legal.creditcard" class="text-slate-600 hover:text-slate-900 hover:underline">Legal</a>
+            <a href="https://support.creditcard" class="text-slate-600 hover:text-slate-900 hover:underline">Support</a>
+            <a href="https://contact.creditcard" class="text-slate-600 hover:text-slate-900 hover:underline">Contact</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="mt-8 border-t border-slate-200 pt-4">
+        <p class="text-xs text-slate-500 text-center">
+          © 2025 The CreditCard Collection — ronarn AS. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
