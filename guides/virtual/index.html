@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Virtual Cards & Tap-to-Pay – Guides – Choose.Creditcard</title>
+  <meta name="description"
+        content="Educational guide to virtual cards, tap-to-pay and digital wallets: how tokenisation works, where card data is stored, and what to check in your card app." />
+  <link rel="canonical" href="https://choose.creditcard/guides/virtual/" />
+
+  <!-- SEO basics -->
+  <meta name="robots" content="index,follow" />
+  <meta name="keywords"
+        content="virtual card guide, tap to pay, tokenisation, digital wallet, Apple Pay, Google Pay, card security" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Virtual Cards & Tap-to-Pay – Guides – Choose.Creditcard" />
+  <meta property="og:description"
+        content="Understand how virtual cards and tap-to-pay work, how your card is tokenised, and what that means for security and everyday use." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://choose.creditcard/guides/virtual/" />
+  <meta property="og:image" content="https://choose.creditcard/preview.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Virtual Cards & Tap-to-Pay – Guides – Choose.Creditcard" />
+  <meta name="twitter:description"
+        content="Neutral, documentation-based explanation of virtual cards, wallets and tap-to-pay." />
+  <meta name="twitter:image" content="https://choose.creditcard/preview.png" />
+
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="/styles.css" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-64FE63JQ3H"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-64FE63JQ3H');
+  </script>
+</head>
+
+<body class="bg-slate-50 text-slate-900">
+  <!-- Header -->
+  <header class="border-b border-slate-200 bg-white/80 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="h-9 w-9 rounded-full bg-slate-900 flex items-center justify-center text-xs font-bold text-sky-300">
+          CC
+        </div>
+        <div class="flex flex-col leading-tight">
+          <span class="font-semibold tracking-tight">Choose.Creditcard</span>
+          <span class="text-[11px] text-slate-500">Comparison hub · The CreditCard Collection</span>
+        </div>
+      </div>
+
+      <nav class="hidden md:flex gap-6 text-sm text-slate-600">
+        <a href="https://fin.creditcard/" class="hover:text-slate-900">Collection</a>
+        <a href="https://choose.creditcard/#table" class="hover:text-slate-900">Comparison</a>
+        <a href="https://choose.creditcard/#how" class="hover:text-slate-900">How we compare</a>
+        <a href="/guides/" class="hover:text-slate-900 font-semibold">Guides</a>
+        <a href="/travel/" class="hover:text-slate-900">Travel &amp; FX hub</a>
+        <a href="/technology/" class="hover:text-slate-900">Technology hub</a>
+      </nav>
+
+      <a href="mailto:support@ronarn.com"
+         class="text-xs md:text-sm bg-slate-900 hover:bg-slate-800 text-slate-50 font-semibold rounded-lg px-3 py-1.5 transition">
+        Contact
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Breadcrumbs -->
+    <section class="max-w-6xl mx-auto px-4 pt-5 pb-2">
+      <nav class="text-xs text-slate-500 flex items-center gap-1">
+        <a href="https://choose.creditcard/?utm_source=choose.creditcard&utm_medium=internal&utm_campaign=guides_virtual_breadcrumb"
+           class="hover:text-slate-900 hover:underline">Home</a>
+        <span>›</span>
+        <a href="/guides/?utm_source=choose.creditcard&utm_medium=internal&utm_campaign=guides_virtual_breadcrumb"
+           class="hover:text-slate-900 hover:underline">Guides</a>
+        <span>›</span>
+        <span class="text-slate-700">Virtual Cards &amp; Tap-to-Pay</span>
+      </nav>
+    </section>
+
+    <!-- Hero -->
+    <section class="max-w-6xl mx-auto px-4 pb-6">
+      <div class="bg-white border border-slate-200 rounded-2xl shadow-sm p-5 md:p-7">
+        <p class="text-xs uppercase tracking-[0.25em] text-slate-500 mb-3">
+          Guides · Technology &amp; security
+        </p>
+        <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight mb-3">
+          Virtual cards &amp; tap-to-pay<br class="hidden md:block" />
+          <span class="text-sky-600">— how “invisible” card payments work.</span>
+        </h1>
+        <p class="text-sm md:text-base text-slate-600 mb-3">
+          Modern cards rarely leave your wallet. Instead, you use virtual PANs, device tokens
+          and tap-to-pay through phones and watches. This guide explains what is actually stored where,
+          how transactions are authorised, and what to look for in your card app.
+        </p>
+        <p class="text-xs md:text-[13px] text-slate-500">
+          Neutral, educational overview. No issuer has paid to appear in this guide.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 1: What is a virtual card -->
+    <section class="max-w-6xl mx-auto px-4 pb-6">
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white border border-slate-200 rounded-2xl p-5">
+          <h2 class="text-lg font-semibold mb-2">What is a “virtual card”?</h2>
+          <p class="text-sm text-slate-600 mb-3">
+            A virtual card is a card number that only exists in software. It is linked to your main account,
+            but can have its own number, expiry and security code. Typical use-cases:
+          </p>
+          <ul class="list-disc list-inside text-sm text-slate-600 space-y-1 mb-3">
+            <li>Online shopping without exposing your physical card number</li>
+            <li>Single-use numbers for one-off purchases</li>
+            <li>Merchant-locked numbers for subscriptions</li>
+            <li>Temporary cards while you wait for a physical replacement</li>
+          </ul>
+          <p class="text-xs text-slate-500">
+            Some banks treat the virtual card as a separate “token”; others show it as part of one card profile.
+          </p>
+        </div>
+
+        <div class="bg-sky-50 border border-sky-100 rounded-2xl p-5">
+          <h3 class="text-sm font-semibold mb-2">Where this fits in the network</h3>
+          <ul class="text-sm text-slate-700 space-y-1">
+            <li>
+              • <a href="/technology/?utm_source=choose.creditcard&utm_medium=internal&utm_campaign=guides_virtual"
+                    class="text-sky-700 hover:underline">Technology &amp; Payments hub</a> – overall tech overview.
+            </li>
+            <li>
+              • <a href="/travel/?utm_source=choose.creditcard&utm_medium=internal&utm_campaign=guides_virtual"
+                    class="text-sky-700 hover:underline">Travel &amp; FX hub</a> – virtual cards on trips.
+            </li>
+            <li>
+              • <a href="/protections/?utm_source=choose.creditcard&utm_medium=internal&utm_campaign=guides_virtual"
+                    class="text-sky-700 hover:underline">Protections hub</a> – chargeback and dispute rights.
+            </li>
+          </ul>
+
+          <p class="mt-4 text-xs text-slate-600">
+            For structured feature comparisons, use the
+            <a href="https://choose.creditcard/#table?utm_source=choose.creditcard&utm_medium=internal&utm_campaign=guides_virtual"
+               class="text-sky-700 hover:underline">comparison prototype</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Tap to pay & tokenisation -->
+    <section class="max-w-6xl mx-auto px-4 pb-6">
+      <div class="bg-white border border-slate-200 rounded-2xl p-5 md:p-6">
+        <h2 class="text-lg font-semibold mb-2">How tap-to-pay and tokenisation actually work</h2>
+        <p class="text-sm text-slate-600 mb-3">
+          When you add a card to a wallet (such as Apple Pay or Google Pay), the real card number is swapped
+          for a “device token”. This is a card-network issued number that only works from that device and wallet.
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-4 text-sm text-slate-600">
+          <div>
+            <h3 class="font-semibold mb-1 text-slate-800">1. Provisioning</h3>
+            <p>Your bank or issuer checks the device, then approves a token for that specific phone or watch.</p>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-1 text-slate-800">2. Token in use</h3>
+            <p>When you tap, the terminal sees the token, not your underlying card number.</p>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-1 text-slate-800">3. Mapping</h3>
+            <p>The card network maps the token back to your real card in the background and routes the authorisation.</p>
+          </div>
+        </div>
+
+        <p class="mt-4 text-xs text-slate-500">
+          This design means a compromised terminal or merchant typically only sees the token, which is less useful
+          if stolen than a raw card number.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 3: Settings to check -->
+    <section class="max-w-6xl mx-auto px-4 pb-10">
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white border border-slate-200 rounded-2xl p-5">
+          <h2 class="text-lg font-semibold mb-2">What to look for in your card app</h2>
+          <p class="text-sm text-slate-600 mb-3">
+            Card apps and wallets often expose useful controls that many people never touch. Typical options:
+          </p>
+          <ul class="list-disc list-inside text-sm text-slate-600 space-y-1 mb-3">
+            <li>Freeze/unfreeze the physical card instantly</li>
+            <li>Separate limits for contactless, online and ATM usage</li>
+            <li>Per-merchant or per-region restrictions</li>
+            <li>Virtual card numbers dedicated to one shop or subscription</li>
+            <li>Push notifications for every transaction</li>
+          </ul>
+          <p class="text-xs text-slate-500">
+            These settings do not change the basic legal protections, but can reduce practical fraud risk.
+          </p>
+        </div>
+
+        <div class="bg-slate-900 text-slate-50 rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <h3 class="text-sm font-semibold mb-2">Where to go next</h3>
+            <ul class="text-sm space-y-1">
+              <li>
+                • <a href="/guides/?utm_source=choose.creditcard&utm_medium=internal&utm_campaign=guides_virtual_next"
+                     class="underline">Back to all Guides</a>
+              </li>
+              <li>
+                • <a href="/technology/?utm_source=choose.creditcard&utm_medium=internal&utm_campaign=guides_virtual_next"
+                     class="underline">Technology &amp; Payments hub</a>
+              </li>
+              <li>
+                • <a href="/protections/?utm_source=choose.creditcard&utm_medium=internal&utm_campaign=guides_virtual_next"
+                     class="underline">Insurance &amp; Protections hub</a>
+              </li>
+            </ul>
+          </div>
+
+          <p class="mt-4 text-[11px] text-slate-400">
+            This guide is informational only and does not provide financial or security advice. Always consult
+            your issuer’s own documentation for exact features and limitations.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 bg-slate-50/80 mt-12">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-6 md:gap-10">
+        
+        <div class="md:w-1/2">
+          <h2 class="text-sm font-semibold tracking-wide text-slate-700 uppercase">
+            About the network
+          </h2>
+          <p class="mt-3 text-sm leading-relaxed text-slate-600">
+            Choose.Creditcard is part of The CreditCard Collection – an independent credit card
+            comparison and finance education network operated by ronarn AS (Norway).
+          </p>
+          <p class="text-xs text-slate-500 mt-1">
+            Independent &amp; unbiased. Card rankings are based on documentation, not sponsorships.
+          </p>
+          <p class="mt-3 text-sm text-slate-600">
+            For questions, email:
+            <a href="mailto:support@cc.creditcard" class="font-medium hover:underline">support@cc.creditcard</a>
+          </p>
+        </div>
+
+        <div class="md:w-1/2">
+          <h2 class="text-sm font-semibold tracking-wide text-slate-700 uppercase">Legal &amp; Support</h2>
+          <nav class="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
+            <a href="https://privacy.creditcard" class="text-slate-600 hover:underline">Privacy</a>
+            <a href="https://terms.creditcard" class="text-slate-600 hover:underline">Terms</a>
+            <a href="https://disclaimer.creditcard" class="text-slate-600 hover:underline">Disclaimer</a>
+            <a href="https://disclosure.creditcard" class="text-slate-600 hover:underline">Disclosure</a>
+            <a href="https://policies.creditcard" class="text-slate-600 hover:underline">Policies</a>
+            <a href="https://legal.creditcard" class="text-slate-600 hover:underline">Legal</a>
+            <a href="https://support.creditcard" class="text-slate-600 hover:underline">Support</a>
+            <a href="https://contact.creditcard" class="text-slate-600 hover:underline">Contact</a>
+          </nav>
+        </div>
+
+      </div>
+
+      <div class="mt-8 border-t border-slate-200 pt-4">
+        <p class="text-xs text-slate-500 text-center">
+          © 2025 The CreditCard Collection — ronarn AS. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
