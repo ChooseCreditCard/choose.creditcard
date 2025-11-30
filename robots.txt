@@ -1,5 +1,19 @@
 User-agent: *
 Allow: /
-# Ikke la søkemotorer kaste bort tid i affiliate-redirect-mappen
-Disallow: /go/
-Sitemap: https://choose.creditcard/sitemap.xml
+
+# Block common GitHub Pages noise
+Disallow: /CNAME
+Disallow: /README
+Disallow: /LICENSE
+
+# Crawl-delay (safe value for GitHub Pages hosting)
+Crawl-delay: 1
+
+# Primary sitemap index
+Sitemap: https://choose.creditcard/sitemap-index.xml
+
+# Individual sitemaps for clarity (optional but recommended)
+Sitemap: https://choose.creditcard/sitemap-main.xml
+Sitemap: https://choose.creditcard/sitemap-guides.xml
+Sitemap: https://choose.creditcard/sitemap-directory.xml
+Sitemap: https://choose.creditcard/sitemap-minisites.xml
