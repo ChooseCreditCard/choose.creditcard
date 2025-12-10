@@ -29,6 +29,40 @@
         content="Travel & FX sub-hub of The CreditCard Collection by ronarn. Prototype and educational only." />
   <meta name="twitter:image" content="https://choose.creditcard/preview.png" />
 
+  <!-- Structured data: Travel & FX FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a travel credit card?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A travel credit card is optimised for spending outside your home country. The most important features are foreign exchange (FX) fees, ATM fees abroad, and whether the card includes documented travel insurance and airport lounge access."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I look for in a travel card with no foreign fees?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For a travel card with no foreign fees, check that FX on purchases is 0%, ATM terms abroad are clear, and travel insurance and protections are documented. A card can advertise no foreign fees but still be expensive if ATM markups or other charges are high."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do airport lounges always make a travel card worth it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Lounge access only makes sense if you actually use it. Frequent flyers may get value from lounge programmes and priority services, but occasional travellers are often better served by a cheaper travel card with low FX fees and simple insurance."
+        }
+      }
+    ]
+  }
+  </script>
+
   <!-- Shared CSS -->
   <link rel="stylesheet" href="/styles.css" />
 
@@ -88,7 +122,9 @@
             <span class="text-sky-600">without getting surprised abroad.</span>
           </h1>
           <p class="text-slate-600 leading-relaxed mb-4 text-sm md:text-base">
-            This sub-hub on Choose.Creditcard is focused on cards used outside your home country:
+            This sub-hub on
+            <a href="/" class="font-medium text-slate-800 hover:text-slate-900 hover:underline">Choose.Creditcard</a>
+            is focused on cards used outside your home country:
             foreign exchange fees, ATM withdrawals, airport lounges, and bundled travel insurance.
             Everything here is a <strong class="font-semibold">prototype and educational only</strong>.
           </p>
@@ -345,6 +381,36 @@
           This page does not provide financial advice.
         </div>
       </div>
+    </section>
+
+    <!-- Travel FAQ (prototype) -->
+  section id="faq" class="max-w-6xl mx-auto px-4 pb-16">
+      <h2 class="text-xl font-semibold mb-3">Travel &amp; FX card FAQ (prototype)</h2>
+
+      <h3 class="text-sm font-semibold text-slate-800 mt-4 mb-1">
+        What is a travel credit card?
+      </h3>
+      <p class="text-sm text-slate-600">
+        A travel credit card is a card that is optimised for spending outside your home country.
+        The key features are foreign exchange (FX) fees, ATM fees abroad, and whether the card
+        includes documented travel insurance and airport lounge access.
+      </p>
+
+      <h3 class="text-sm font-semibold text-slate-800 mt-4 mb-1">
+        What should I look for in a travel card with no foreign fees?
+      </h3>
+      <p class="text-sm text-slate-600">
+        Look for 0% FX fees on purchases, clear ATM terms abroad, and transparent travel insurance.
+        A “no foreign fees” card with poor insurance or high ATM markups can still be expensive on trips.
+      </p>
+
+      <h3 class="text-sm font-semibold text-slate-800 mt-4 mb-1">
+        Do airport lounges always make a travel card worth it?
+      </h3>
+      <p class="text-sm text-slate-600">
+        Not necessarily. Lounge access only makes sense if you actually fly often enough to use it.
+        Occasional travellers are often better off with a cheaper travel card with low FX fees.
+      </p>
     </section>
 
     <!-- Methodology note -->
